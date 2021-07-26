@@ -7,17 +7,8 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/cards.js":
-/*!**********************!*\
-  !*** ./src/cards.js ***!
-  \**********************/
-/***/ ((module) => {
-
-eval("module.exports = {}\n\n\n//# sourceURL=webpack://security-frameworks/./src/cards.js?");
-
-/***/ }),
 
 /***/ "./src/index.js":
 /*!**********************!*\
@@ -25,8 +16,17 @@ eval("module.exports = {}\n\n\n//# sourceURL=webpack://security-frameworks/./src
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cards_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards.js */ \"./src/cards.js\");\n/* harmony import */ var _cards_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_cards_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst cardContainer = document.getElementById('card-container');\n\n// // fetch the data and render table\n// fetch(frameworkUrl)\n//   .then((response) => response.json())\n//   .then((incoming) => {\n\n//     // render table\n//     table.renderTable(tableDiv, incoming.filter(r => r.source == 'nist_csf_v1.1'), { 'caption': 'NIST CSF 1.1' });\n\n//   })\n//   .catch((err) => console.error(err));\n\n\n//# sourceURL=webpack://security-frameworks/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_cards_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/cards.js */ \"./src/js/cards.js\");\n\nconst cardContainer = document.getElementById('card-container');\n\n// render the cards\n_js_cards_js__WEBPACK_IMPORTED_MODULE_0__.data.forEach(element => {\n  console.log(element);\n});\n// // fetch the data and render table\n// fetch(frameworkUrl)\n//   .then((response) => response.json())\n//   .then((incoming) => {\n\n//     // render table\n//     table.renderTable(tableDiv, incoming.filter(r => r.source == 'nist_csf_v1.1'), { 'caption': 'NIST CSF 1.1' });\n\n//   })\n//   .catch((err) => console.error(err));\n\n\n//# sourceURL=webpack://devsecops-assessment/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/cards.js":
+/*!*************************!*\
+  !*** ./src/js/cards.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"data\": () => (/* binding */ data)\n/* harmony export */ });\nconst data = [{ name: \"observability\" }, { name: \"durability\" }];\n\n\n\n//# sourceURL=webpack://devsecops-assessment/./src/js/cards.js?");
 
 /***/ })
 
@@ -38,8 +38,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -56,18 +57,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => module['default'] :
-/******/ 				() => module;
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -82,7 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
@@ -97,9 +86,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
 /******/ 	})();
 /******/ 	
 /************************************************************************/
+/******/ 	
 /******/ 	// startup
-/******/ 	// Load entry module
-/******/ 	__webpack_require__("./src/index.js");
-/******/ 	// This entry module used 'exports' so it can't be inlined
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
 /******/ })()
 ;

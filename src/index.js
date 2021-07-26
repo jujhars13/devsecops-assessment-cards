@@ -1,7 +1,10 @@
-import * as table from "./cards.js";
-
+import {data} from "./js/cards.js";
 const cardContainer = document.getElementById('card-container');
 
+// render the cards
+data.forEach(element => {
+  console.log(element);
+});
 // // fetch the data and render table
 // fetch(frameworkUrl)
 //   .then((response) => response.json())

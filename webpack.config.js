@@ -14,7 +14,13 @@ module.exports = {
       template: "src/index.html",
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/css", to: path.resolve(__dirname, "docs/css") }],
+      patterns: [
+        { from: "src/css", to: path.resolve(__dirname, "docs/css") },
+        {
+          from: "src/favicon.ico",
+          to: path.resolve(__dirname, "docs/favicon.ico"),
+        }
+      ],
     }),
   ],
 };
