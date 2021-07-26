@@ -1,0 +1,27 @@
+{
+  "name": "devsecops-assessment",
+  "version": "1.0.0",
+  "description": "Assessment",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jujhars13/security-frameworks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jujhars13/security-frameworks/issues"
+  },
+  "homepage": "https://github.com/jujhars13/security-frameworks#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "html-webpack-plugin": "^4.5.1",
+    "prettier": "^2.2.1",
+    "reload": "^3.1.1",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0"
+  }
+}

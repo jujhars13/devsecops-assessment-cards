@@ -1,0 +1,21 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+
+  "plugins": ["prettier"],
+
+  "rules": {
+    "prettier/prettier": "error",
+    "semi": "warn"
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "parser": "@typescript-eslint/parser"
+  },
+
+  "env": {
+    "browser": true,
+    "node": false,
+    "es2020": true
+  }
+}
