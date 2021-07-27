@@ -1,6 +1,6 @@
 # DevSecOps Capability Assessment Cards
 
-Temporarily published to [](https://jujhars13.github.io/devsecops-assessment-cards/)
+Temporarily published to [https://jujhars13.github.io/devsecops-assessment-cards/](https://jujhars13.github.io/devsecops-assessment-cards/)
 
 Cards used to assess the DevSecOps capability of a team.
 
@@ -28,7 +28,7 @@ node_modules/.bin/webpack --watch
 
 Published via Github pages atm, so build to `docs` using `webpack` and just push to `main` to publish.
 
-Temporarily published to [](https://jujhars13.github.io/devsecops-assessment-cards/)
+Temporarily published to [https://jujhars13.github.io/devsecops-assessment-cards/](https://jujhars13.github.io/devsecops-assessment-cards/)
 
 ```bash
 # simply build for prod
