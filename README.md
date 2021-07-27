@@ -8,6 +8,9 @@ Cards used to assess the DevSecOps capability of a team
 # OPTIONAL use the awesome `reload` which auto-refreshes your browser on change using websockets
 # `npm install -g webpack webpack-cli reload`
 
+# install deps
+npm install
+
 # in the root of the repo
 node_modules/.bin/webpack --watch
 (cd docs && reload -e "html|js|css|json|yml")

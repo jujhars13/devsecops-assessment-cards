@@ -12,12 +12,19 @@ const template = Mustache.render(`
 <div class="category" data-category="{{categoryName}}">
   <h2>{{categoryName}}</h2>
   {{#cards}}
-    <div class="card" data-id="{{id}}">
-      <h3>{{title}}</h3>
-      <span>{{id}}</span>
-      <span>{{description}}</span>
-      <span>{{min_score}}</span>
-      <span>{{max_score}}</span>
+    <div class="card" style="width: 18rem;" data-id="{{id}}">
+      <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">{{title}}</text></svg>
+        <rect width="100%" height="100%" fill="#868e96"></rect>
+      </svg
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <span>{{id}}</span>
+        <p class="card-text">
+        {{description}}
+        <span>{{min_score}}</span>
+        <span>{{max_score}}</span>
+        </p>
+      </div>
     </div>
   {{/cards}}
 </div>
