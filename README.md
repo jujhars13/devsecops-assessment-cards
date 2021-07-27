@@ -41,6 +41,9 @@ jq -s '.' /tmp/data.jsonl > src/js/cards.json
 
 # or single line version
 csvjson data.csv | jq -c '.[]' | jq -s '.' > src/js/cards.json
+
+# badass ninja compile on change
+inotify $(csvjson data.csv | jq -c '.[]' | jq -s '.' > src/js/cards.json)
 ```
 
 ## Licence
