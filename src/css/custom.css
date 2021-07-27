@@ -1,3 +1,9 @@
 #debug {
   font-size: large;
 }
+.high-score {
+  background-color: chartreuse;
+}
+.low-score {
+  background-color: brown;
+}

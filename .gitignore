@@ -3,6 +3,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/vim,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,visualstudiocode
 
+.~lock.data.csv*
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
