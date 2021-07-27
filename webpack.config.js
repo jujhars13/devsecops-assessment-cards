@@ -21,6 +21,6 @@ module.exports = {
           to: path.resolve(__dirname, "docs/favicon.ico"),
         }
       ],
-    }),
+    })
   ],
 };

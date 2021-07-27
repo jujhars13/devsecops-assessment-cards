@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "category": "Testability",
+    "title": "nunc",
+    "description": "sum es est ",
+    "max_score": 4,
+    "min_score": true,
+    "seq": 1
+  },
+  {
+    "id": 2,
+    "category": "Operability",
+    "title": "nunc",
+    "description": "summus estis sunt",
+    "max_score": 4,
+    "min_score": true,
+    "seq": 1
+  },
+  {
+    "id": 3,
+    "category": "CI/CD",
+    "title": "nunc",
+    "description": "ero eris erit erimus eristis erunt",
+    "max_score": 4,
+    "min_score": true,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "category": "Flow and Work",
+    "title": "nunc",
+    "description": "sum es est summus estis sunt",
+    "max_score": 4,
+    "min_score": true,
+    "seq": 2
+  },
+  {
+    "id": 5,
+    "category": "Team Culture",
+    "title": "nunc",
+    "description": "erimus eristis erunt",
+    "max_score": 4,
+    "min_score": true,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "category": "Team Culture",
+    "title": "bunc",
+    "description": "ero eris erit",
+    "max_score": 4,
+    "min_score": true,
+    "seq": 1
+  }
+]
