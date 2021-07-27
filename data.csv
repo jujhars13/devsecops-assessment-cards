@@ -1,7 +1,7 @@
-id,category,title,description,max_score,min_score,seq
+id,category,title,description,high_score,low_score,seq
 1,Testability,nunc,sum es est ,4,1,1
 2,Operability,nunc,summus estis sunt,4,1,1
 3,CI/CD,nunc,ero eris erit erimus eristis erunt,4,1,1
 4,Flow and Work,nunc,sum es est summus estis sunt,4,1,2
-5,Team Culture,nunc,erimus eristis erunt,4,1,1
+5,Team Culture,Easy to Release,How easy is it to release the software that you work to production,It's easy and straightforward to release my changes,It's very difficult to release and takes a long time,1
 6,Team Culture,bunc,ero eris erit,4,1,1

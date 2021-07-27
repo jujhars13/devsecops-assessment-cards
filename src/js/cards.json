@@ -4,8 +4,8 @@
     "category": "Testability",
     "title": "nunc",
     "description": "sum es est ",
-    "max_score": 4,
-    "min_score": true,
+    "max_score": "4",
+    "min_score": "1",
     "seq": 1
   },
   {
@@ -13,8 +13,8 @@
     "category": "Operability",
     "title": "nunc",
     "description": "summus estis sunt",
-    "max_score": 4,
-    "min_score": true,
+    "max_score": "4",
+    "min_score": "1",
     "seq": 1
   },
   {
@@ -22,8 +22,8 @@
     "category": "CI/CD",
     "title": "nunc",
     "description": "ero eris erit erimus eristis erunt",
-    "max_score": 4,
-    "min_score": true,
+    "max_score": "4",
+    "min_score": "1",
     "seq": 1
   },
   {
@@ -31,17 +31,17 @@
     "category": "Flow and Work",
     "title": "nunc",
     "description": "sum es est summus estis sunt",
-    "max_score": 4,
-    "min_score": true,
+    "max_score": "4",
+    "min_score": "1",
     "seq": 2
   },
   {
     "id": 5,
     "category": "Team Culture",
-    "title": "nunc",
-    "description": "erimus eristis erunt",
-    "max_score": 4,
-    "min_score": true,
+    "title": "Easy to Release",
+    "description": "How easy is it to release the software that you work to production",
+    "max_score": "It's easy and straightforward to release my changes",
+    "min_score": "It's very difficult to release and takes a long time",
     "seq": 1
   },
   {
@@ -49,8 +49,8 @@
     "category": "Team Culture",
     "title": "bunc",
     "description": "ero eris erit",
-    "max_score": 4,
-    "min_score": true,
+    "max_score": "4",
+    "min_score": "1",
     "seq": 1
   }
 ]
