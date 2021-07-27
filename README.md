@@ -1,6 +1,12 @@
 # DevSecOps Capability Assessment Cards
 
-Cards used to assess the DevSecOps capability of a team
+Temporarily published to [](https://jujhars13.github.io/devsecops-assessment-cards/)
+
+Cards used to assess the DevSecOps capability of a team.
+
+Inspired by the physical [software delivery cards](https://agilestationery.com/products/software-delivery-assessment-card-deck-by-matthew-skelton) from [Matthew Skelton](https://uk.linkedin.com/in/matthewskelton)
+
+Use these cards to assess the DevSecOps capability of a team which you can then plot on the [DevSecOps capability model](https://devsecops.jujhar.com/).
 
 ## Local Dev
 
@@ -21,6 +27,8 @@ node_modules/.bin/webpack --watch
 ## Pushing to prod
 
 Published via Github pages atm, so build to `docs` using `webpack` and just push to `main` to publish.
+
+Temporarily published to [](https://jujhars13.github.io/devsecops-assessment-cards/)
 
 ```bash
 # simply build for prod
