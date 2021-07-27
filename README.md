@@ -1,6 +1,6 @@
 # DevSecOps Capability Assessment Cards
 
-## Building
+## Local Dev
 
 ```bash
 # OPTIONAL use the awesome `reload` which auto-refreshes your browser on change using websockets
@@ -11,6 +11,14 @@ node_modules/.bin/webpack --watch
 (cd docs && reload -e "html|js|css|json|yml")
 
 # browse to http://localhost:8080/
+```
+
+## Pushing to prod
+
+```bash
+# simply build for prod
+NODE_ENV=production node_modules/.bin/webpack build
+# now git commit and push to main
 ```
 
 ## The Data

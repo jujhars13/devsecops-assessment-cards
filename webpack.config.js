@@ -19,8 +19,12 @@ module.exports = {
         {
           from: "src/favicon.ico",
           to: path.resolve(__dirname, "docs/favicon.ico"),
-        }
+        },
+        {
+          from: "src/robots.txt",
+          to: path.resolve(__dirname, "docs/robots.txt"),
+        },
       ],
-    })
+    }),
   ],
 };
