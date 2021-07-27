@@ -1,5 +1,7 @@
 # DevSecOps Capability Assessment Cards
 
+Cards used to assess the DevSecOps capability of a team
+
 ## Local Dev
 
 ```bash
@@ -14,6 +16,8 @@ node_modules/.bin/webpack --watch
 ```
 
 ## Pushing to prod
+
+Published via Github pages atm, so build to `docs` using `webpack` and just push to `main` to publish.
 
 ```bash
 # simply build for prod
