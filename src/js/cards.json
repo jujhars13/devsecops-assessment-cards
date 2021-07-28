@@ -38,8 +38,8 @@
     "category": "Dev Practices",
     "title": "Broken Builds",
     "description": "Don't Check In on Broken Build except to fix the broken build",
-    "high_score": null,
-    "low_score": null,
+    "high_score": "We guard the build with care and never check-in on a broken build",
+    "low_score": "We cannot easily know when a team has broken our build",
     "more_info_link": null,
     "seq": 1
   },
@@ -50,7 +50,7 @@
     "title": "Stop the Line",
     "description": "If any part of the pipeline fails, everyone stops feature work and fixes the problem",
     "high_score": null,
-    "low_score": null,
+    "low_score": "The pipeline fails so often it is difficult to know which team broke the build",
     "more_info_link": null,
     "seq": 1
   },
@@ -391,7 +391,7 @@
     "title": "Management style",
     "description": "How effective and appropriate are the approaches by management and other senior stakeholders",
     "high_score": "The management approaches help us to deliver rapidly and safely",
-    "low_score": null,
+    "low_score": "The management approach really hamper our efforts",
     "more_info_link": null,
     "seq": 1
   },
@@ -544,8 +544,8 @@
     "category": "Tech",
     "title": "Binaries",
     "description": "Only Build Your Binaries Once. No special 'release candidate' builds",
-    "high_score": null,
-    "low_score": null,
+    "high_score": "We have only a single build to reproduce a binary artifact which then gets promoted through all the environments with no additional merging or building needed",
+    "low_score": "We have multiple different builds and then merge to create the final release candidate",
     "more_info_link": null,
     "seq": 1
   },
