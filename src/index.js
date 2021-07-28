@@ -11,7 +11,7 @@ const cardTemplate = Mustache.render(
   <h1>{{{categoryName}}}</h1>
 </div>
 {{#cards}}
-<div class="main-card-container">
+<div class="main-card-container col-md-6 col-lg-4 mb-5">
   <div class="question-card">
     <div class="card-front {{{categoryName}}}">
       <h1>{{id}}. {{title}}</h1>

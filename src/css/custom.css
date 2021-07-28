@@ -5,10 +5,6 @@ body {
   background-size: cover;
 }
 
-.text-faded {
-  color: #f6e1c5;
-}
-
 .category-name h1{
   color:white;
   padding-top: 20px;
@@ -53,6 +49,9 @@ body {
 }
 .card-front.Availability{
   background:seashell;
+}
+.card-front.Culture{
+  background:steelblue;
 }
 
 

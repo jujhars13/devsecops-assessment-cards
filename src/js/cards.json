@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "category": "Team Culture",
+    "category": "Culture",
     "title": "Easy to Release",
     "description": "How easy is it to release the software that you work to production",
     "high_score": "It's easy and straightforward to release my changes",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "category": "Team Culture",
+    "category": "Culture",
     "title": "Low friction processes",
     "description": "Do you feel that the processes are suitable for you to deliver software cotinuously",
     "high_score": "The whole thing is a well oiled machine, everybody is in their groove and we barely feel any friction. The processes help us to do the right thing",
