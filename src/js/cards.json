@@ -121,7 +121,7 @@
     "seq": null
   },
   {
-    "id": 6,
+    "id": 1,
     "slug": "ci-cd",
     "category": "CI/CD",
     "title": "CI/CD Speed and Stability",
@@ -132,13 +132,57 @@
     "seq": 1
   },
   {
-    "id": 7,
+    "id": 2,
     "slug": "ci-cd",
     "category": "CI/CD",
     "title": "Blue-Green",
     "description": "Any mechanism to test a new version alongside an existing version when necessary",
     "high_score": "We use fine-grained blue-green deployment techniques, at the level of individual services",
     "low_score": "We do not use any blue-green deployment techniques",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 3,
+    "slug": "ci-cd",
+    "category": "CI/CD",
+    "title": "Idempotency - Redploying the app",
+    "description": "What would happen if we decided to redeploy the application even though nothing has changed",
+    "high_score": "No worries",
+    "low_score": "We don’t know what would happen, the deployments are flakey",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "ci-cd",
+    "category": "CI/CD",
+    "title": "Rerun tests",
+    "description": "What would happen if we decided to rerun the test suite multiple times",
+    "high_score": "No worries",
+    "low_score": "We don’t know what would happen, the test suite is flakey",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "ci-cd",
+    "category": "CI/CD",
+    "title": "Fresh config",
+    "description": "What would happen if we decided to delete the config and redeploy it",
+    "high_score": "No worries, the application would behave as it did before",
+    "low_score": "It’s very likely the app would behave differently as there’s a lot of manual changes",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "ci-cd",
+    "category": "CI/CD",
+    "title": "Environment rebuild",
+    "description": "What would happen if we blew away the infra and re-created",
+    "high_score": "No worries, everything would be back up quickly and same as before",
+    "low_score": "It’s very likely the app would break as there’s a lot of manual clickops",
     "more_info_link": null,
     "seq": 1
   },
