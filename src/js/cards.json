@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "category": "Operability",
+    "category": "Observability",
     "title": "Feature Toggles Observability",
     "description": "How do we know which feature toggles are active for a deployment",
     "high_score": "We have a simple UI or API to see what's on in which environment",
@@ -22,6 +22,16 @@
   {
     "id": 3,
     "category": "Observability",
+    "title": "Full stack Observability",
+    "description": "Do you have multiple views of the entire stack's telemetry",
+    "high_score": "We can see through the entire stack from the metal all the way up to the UI issues and performance",
+    "low_score": "We can only see one or two layers and don't really tie them together to tell a story",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "category": "Observability",
     "title": "Hardware insights",
     "description": "How much insight do we have into the behaviour of our infra/deployment fabric",
     "high_score": "We can tell you the CPU, RAM, Network & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
@@ -30,7 +40,7 @@
     "seq": 1
   },
   {
-    "id": 4,
+    "id": 5,
     "category": "Testability",
     "title": "Feature Coverage",
     "description": "What proportion of the features are covered by a test",
@@ -40,7 +50,7 @@
     "seq": 1
   },
   {
-    "id": 5,
+    "id": 6,
     "category": "CI/CD",
     "title": "CI/CD Speed and Stability",
     "description": "CI/CD processes are fast and stable",
@@ -50,7 +60,7 @@
     "seq": 1
   },
   {
-    "id": 6,
+    "id": 7,
     "category": "Availability",
     "title": "MTTR",
     "description": "How long does it take you to restore service in the case of an incident",
@@ -60,7 +70,7 @@
     "seq": 1
   },
   {
-    "id": 7,
+    "id": 8,
     "category": "Culture",
     "title": "Easy to Release",
     "description": "How easy is it to release the software that you work to production",
@@ -70,12 +80,22 @@
     "seq": 2
   },
   {
-    "id": 8,
+    "id": 9,
     "category": "Culture",
     "title": "Low friction processes",
     "description": "Do you feel that the processes are suitable for you to deliver software cotinuously",
     "high_score": "The whole thing is a well oiled machine, everybody is in their groove and we barely feel any friction. The processes help us to do the right thing",
     "low_score": "The processes are painful, too numerous and makes us cry",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 10,
+    "category": "Culture",
+    "title": "Psychological Safety",
+    "description": "How safe do you feel to raise concerns",
+    "high_score": "Our concerns are valued and used to help improve the team and org",
+    "low_score": "If we riase concerns we are ignored or could get in trouble",
     "more_info_link": null,
     "seq": 1
   }
