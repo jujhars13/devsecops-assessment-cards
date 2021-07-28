@@ -22,6 +22,17 @@
     "seq": 1
   },
   {
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
+  },
+  {
     "id": 2,
     "slug": "observability",
     "category": "Observability",
@@ -77,6 +88,17 @@
     "seq": 1
   },
   {
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
+  },
+  {
     "id": 7,
     "slug": "availability",
     "category": "Availability",
@@ -86,6 +108,17 @@
     "low_score": "We do not track this properly",
     "more_info_link": "https://en.wikipedia.org/wiki/Mean_time_to_repair",
     "seq": 1
+  },
+  {
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
   },
   {
     "id": 1,
