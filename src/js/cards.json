@@ -11,7 +11,7 @@
     "seq": 1
   },
   {
-    "id": 5,
+    "id": 2,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Feature Coverage",
@@ -22,15 +22,48 @@
     "seq": 1
   },
   {
-    "id": null,
-    "slug": null,
-    "category": null,
-    "title": null,
-    "description": null,
+    "id": 3,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Unplanned Work",
+    "description": "How much unplanned work do you have and how do you handle it",
+    "high_score": "We have very little unplanned work and have spare capacity to handle any that comes in",
+    "low_score": "More than half our work in any given sprint is unplanned",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Broken Builds",
+    "description": "Don't Check In on Broken Build except to fix the broken build",
     "high_score": null,
     "low_score": null,
     "more_info_link": null,
-    "seq": null
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Stop the Line",
+    "description": "If any part of the pipeline fails, everyone stops feature work and fixes the problem",
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Idempotenent Deployment",
+    "description": "We can deploy the same version repeatedly with the same result",
+    "high_score": "We can redeploy the same version many times with the same result",
+    "low_score": "It is difficult to get repeatable deployments",
+    "more_info_link": null,
+    "seq": 1
   },
   {
     "id": null,
@@ -95,6 +128,17 @@
     "description": "CI/CD processes are fast and stable",
     "high_score": "The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis",
     "low_score": "CI/CD takes so long to do or is very fragile and we end up losing whole chunks of our day to it.",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 7,
+    "slug": "ci-cd",
+    "category": "CI/CD",
+    "title": "Blue-Green",
+    "description": "Any mechanism to test a new version alongside an existing version when necessary",
+    "high_score": "We use fine-grained blue-green deployment techniques, at the level of individual services",
+    "low_score": "We do not use any blue-green deployment techniques",
     "more_info_link": null,
     "seq": 1
   },
@@ -293,6 +337,39 @@
     "description": "How effective and easy to use is the delivery platform underpinning your team's delivery?",
     "high_score": "The platform is a force multiplier and helps us deliver rapidly and safely. We love the platform.",
     "low_score": "The platform seems to obstruct us and is difficult to use",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 3,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "API Replay",
+    "description": "Record interactions against a service or API",
+    "high_score": "We record key requests and responses from remote APIS which we use to build high-fidelity integratioon tests",
+    "low_score": "We have no way to record requests or responses from a remote API",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Binaries",
+    "description": "Only Build Your Binaries Once. No special 'release candidate' builds",
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Stubs",
+    "description": "Simulate external systems. Treat almost every other system as 'externa'",
+    "high_score": "The stubs we consume and write are good quality and give us a degree of confidence that our tests are working well.",
+    "low_score": "There are few stubs available and we do noot have enough time to write stubs ourselves.",
     "more_info_link": null,
     "seq": 1
   }
