@@ -5,7 +5,7 @@
     "category": "Dev Practices",
     "title": "Config deployment",
     "description": "How easy is to deploy/inject a configuration change",
-    "high_score": "We can run the majority of config changes independantly of our code release.  All changes are auditable and revertable",
+    "high_score": "We can run the majority of config changes independently of our code release.  All changes are auditable and revertable",
     "low_score": "We have to manual changes",
     "more_info_link": null,
     "seq": 1
