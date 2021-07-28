@@ -66,6 +66,39 @@
     "seq": 1
   },
   {
+    "id": 7,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Spend on Operability",
+    "description": "What proportion of product budget and team effort is spent on operational aspects? How do you track this?",
+    "high_score": "We spend our 30% of our time and budget on addressing operational aspects?",
+    "low_score": "We try to spend as little as possible on operational aspects / we do not track spend on operational aspects?",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 8,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Testability",
+    "description": "How do we show that the software system is easy to test? What do we provide and to whom?",
+    "high_score": "We run clients and external test packs against all parts of our software within our development pipeline.",
+    "low_score": "We do not explicitly aim to make our software easily testable.",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 9,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Sensitive Data",
+    "description": "How do we ensure that sensitive data in logs is masked or hidden?",
+    "high_score": "We test data masking using feature tests that search for log messages after application behaviour is executed",
+    "low_score": "We do not test for sensitive data in logs",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
     "id": null,
     "slug": null,
     "category": null,
@@ -77,7 +110,7 @@
     "seq": null
   },
   {
-    "id": 2,
+    "id": 1,
     "slug": "observability",
     "category": "Observability",
     "title": "Feature Toggles Observability",
@@ -88,7 +121,7 @@
     "seq": 1
   },
   {
-    "id": 3,
+    "id": 2,
     "slug": "observability",
     "category": "Observability",
     "title": "Full stack Observability",
@@ -99,13 +132,46 @@
     "seq": 1
   },
   {
-    "id": 4,
+    "id": 3,
     "slug": "observability",
     "category": "Observability",
     "title": "Hardware insights",
     "description": "How much insight do we have into the behaviour of our infra/deployment fabric",
     "high_score": "We can tell you the CPU, RAM, Network & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
     "low_score": "We only have very rough measures of our hardware performance",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "observability",
+    "category": "Observability",
+    "title": "Service Status",
+    "description": "We build a dashboard in collaboration with the operations teams. UX is a key consideration",
+    "high_score": "Operations teams tend to discover the status indicators themselves",
+    "low_score": null,
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "observability",
+    "category": "Observability",
+    "title": "Logging Working",
+    "description": "How do we know that logging is working correctly?",
+    "high_score": "We test logging using tests that search for specific log message strings in the central log aggregation/search system",
+    "low_score": "We do not test if logging is working",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "observability",
+    "category": "Observability",
+    "title": "System Health",
+    "description": "How do we know that the system is healthy (or unhealthy)?",
+    "high_score": "We query the software using a standard http healthcheck URL and synthetic transactions for key scenarios",
+    "low_score": "We wait for checks made manually by another team to tell us if our software is healthy",
     "more_info_link": null,
     "seq": 1
   },
@@ -250,6 +316,17 @@
     "high_score": "We track our MTTR across the board and can restore in <10 mins on average",
     "low_score": "We do not track this properly",
     "more_info_link": "https://en.wikipedia.org/wiki/Mean_time_to_repair",
+    "seq": 1
+  },
+  {
+    "id": 2,
+    "slug": "availability",
+    "category": "Availability",
+    "title": "Service KPIs",
+    "description": "How do we track the main service/system Key Performance Indicators (KPIs)? What are the KPIs?",
+    "high_score": "We use logging and/or time series metrics to emit service KPIs that are picked up by a dashboard",
+    "low_score": "We do not have Service KPIs defined",
+    "more_info_link": null,
     "seq": 1
   },
   {
@@ -404,7 +481,18 @@
     "high_score": "Done means that the changes are deployed to prod with monitoring to ensure it has not broken anything",
     "low_score": "Our definition of done is a bit wishy-washy and means “feature tests have passed”",
     "more_info_link": null,
-    "seq": null
+    "seq": 1
+  },
+  {
+    "id": 14,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Collaboration",
+    "description": "How do we collaborate on operations aspects of the systems  such as logging, monitoring, alerting and NFRs",
+    "high_score": "We collaboratee on operational aspects from the very first week of the project",
+    "low_score": "We respond after go-live wheen the tickets are raised by the live ops and service teams",
+    "more_info_link": null,
+    "seq": 1
   },
   {
     "id": null,
@@ -469,6 +557,50 @@
     "description": "Simulate external systems. Treat almost every other system as 'externa'",
     "high_score": "The stubs we consume and write are good quality and give us a degree of confidence that our tests are working well.",
     "low_score": "There are few stubs available and we do noot have enough time to write stubs ourselves.",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Call Tracing",
+    "description": "How do we trave a call/request end-to-end through the system?",
+    "high_score": "We use a standard tracing library to trace calls through the system. Tracing fields are maintained across component boundaries",
+    "low_score": "We do not trace calls through the system",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 7,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Performance",
+    "description": "How do we know that the system/service performs within acceptable ranges?",
+    "high_score": "We run a set of indicative performances tests within our deployment pipeline that are run on every check-in to version control.",
+    "low_score": "We rely solely on the performance team to validate the performance of our application or service.",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 8,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Failure Modes",
+    "description": "How can. We see and share the different known failure modes (failure scenarios) for the system?",
+    "high_score": "We use a set of error identifiers to define the failure modes in our software and we use these identifiers in our log messages",
+    "low_score": "We do not relaly know how the system might fail",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 9,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "TLS Certificates",
+    "description": "How do we know when an SSL/TLS certificate is close to expiry?",
+    "high_score": "We use auto-renewal of certificates combined with certificate monitoring so we can take remedial action ahead of time",
+    "low_score": "We do not know when our certificates are going to expire",
     "more_info_link": null,
     "seq": 1
   }
