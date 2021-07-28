@@ -1,5 +1,5 @@
 id,slug,category,title,description,high_score,low_score,more_info_link,seq
-1,dev-practices,Dev Practices,Config deployment,How easy is to deploy/inject a configuration change,We can run the majority of config changes independantly of our code release.  All changes are auditable and revertable,We have to manual changes,,1
+1,dev-practices,Dev Practices,Config deployment,How easy is to deploy/inject a configuration change,We can run the majority of config changes independently of our code release.  All changes are auditable and revertable,We have to manual changes,,1
 5,dev-practices,Dev Practices,Feature Coverage,What proportion of the features are covered by a test,Every one of our features has at least one test,Less than 25% of our features have corresponding tests,,1
 ,,,,,,,,
 2,observability,Observability,Feature Toggles Observability,How do we know which feature toggles are active for a deployment,We have a simple UI or API to see what's on in which environment,We track things manually on paper or in our heads,,1
