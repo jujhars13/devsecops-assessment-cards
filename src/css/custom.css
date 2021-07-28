@@ -19,7 +19,7 @@
   transform: rotateY(180deg);
 }
 
-.thefront {
+.card-front {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -30,7 +30,7 @@
   backface-visibility: hidden;
 }
 
-.theback {
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,19 +42,19 @@
   transform: rotateY(180deg);
 }
 
-.thefront h1,
-.theback h1 {
+.card-front h1,
+.card-back h1 {
   padding: 30px;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
 }
 
-.thefront p,
-.theback p {
+.card-front p,
+.card-back p {
   padding: 30px;
   font-weight: normal;
-  font-size: 12px;
+
   text-align: center;
 }
 
