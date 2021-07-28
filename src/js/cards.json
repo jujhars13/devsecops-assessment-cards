@@ -11,6 +11,16 @@
   },
   {
     "id": 2,
+    "category": "Operability",
+    "title": "Feature Toggles Observability",
+    "description": "How do we know which feature toggles are active for a deployment",
+    "high_score": "We have a simple UI or API to see what's on in which environment",
+    "low_score": "We track things manually on paper or in our heads",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 3,
     "category": "Observability",
     "title": "Hardware insights",
     "description": "How much insight do we have into the behaviour of our infra/deployment fabric",
@@ -20,7 +30,7 @@
     "seq": 1
   },
   {
-    "id": 3,
+    "id": 4,
     "category": "Testability",
     "title": "Feature Coverage",
     "description": "What proportion of the features are covered by a test",
@@ -30,7 +40,7 @@
     "seq": 1
   },
   {
-    "id": 4,
+    "id": 5,
     "category": "CI/CD",
     "title": "CI/CD Speed and Stability",
     "description": "CI/CD processes are fast and stable",
@@ -40,7 +50,7 @@
     "seq": 1
   },
   {
-    "id": 5,
+    "id": 6,
     "category": "Availability",
     "title": "MTTR",
     "description": "How long does it take you to restore service in the case of an incident",
@@ -50,7 +60,7 @@
     "seq": 1
   },
   {
-    "id": 6,
+    "id": 7,
     "category": "Culture",
     "title": "Easy to Release",
     "description": "How easy is it to release the software that you work to production",
@@ -60,7 +70,7 @@
     "seq": 2
   },
   {
-    "id": 7,
+    "id": 8,
     "category": "Culture",
     "title": "Low friction processes",
     "description": "Do you feel that the processes are suitable for you to deliver software cotinuously",
