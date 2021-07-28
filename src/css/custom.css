@@ -9,6 +9,11 @@ body {
   color: #f6e1c5;
 }
 
+.category-name h1{
+  color:white;
+  padding-top: 20px;
+}
+
 /* card */
 .main-card-container {
   position: relative;
@@ -75,7 +80,6 @@ body {
 .card-back p {
   padding: 30px;
   font-weight: normal;
-
   text-align: center;
 }
 
