@@ -7,19 +7,21 @@ const cardContainer = document.getElementById("card-container");
 const cardTemplate = Mustache.render(
   `
 {{#data}}
-<div class="category-name">
+<div class="category-name" data-category="{{slug}}">
   <h1>{{{categoryName}}}</h1>
 </div>
 {{#cards}}
 <div class="main-card-container col-md-6 col-lg-3 mb-2">
   <div class="question-card">
-    <div class="card-front {{{categoryName}}}">
-      <h1>{{id}}. {{title}}</h1>
+    <div class="card-front {{slug}}">
+      <div class="card-number">{{id}}</div>
+      <h2>{{title}}</h2>
       <p>{{description}}</p>
       <footer class="card-footer">{{categoryName}}</footer>
     </div>
     <div class="card-back">
-      <h1>{{id}}. {{title}}</h1>
+      <div class="card-number">{{id}}</div>
+      <h2>{{title}}</h2>
       <p class="high-score">{{high_score}}</p>
       <p class="low-score">{{low_score}}</p>
       {{#more_info_link}}

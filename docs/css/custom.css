@@ -1,16 +1,16 @@
 body {
-  background-color:rgb(29, 84, 185);
+  background-color: rgb(29, 84, 185);
 }
 
-.category-name h1{
-  color:white;
+.category-name h1 {
+  color: white;
   padding: 30px 20px 5px 20px;
 }
 
 /* card */
 .main-card-container {
   position: relative;
-  width: 320px;
+  width: 340px;
   height: 480px;
   background: none;
 }
@@ -38,17 +38,17 @@ body {
   backface-visibility: hidden;
 }
 
-.card-front.Observability{
+.card-front.observability {
   background: cadetblue;
 }
-.card-front.Testability{
-  background:plum;
+.card-front.dev-practices {
+  background: plum;
 }
-.card-front.Availability{
-  background:crimson;
+.card-front.ci-cd {
+  background: crimson;
 }
-.card-front.Culture{
-  background:steelblue;
+.card-front.culture {
+  background: steelblue;
 }
 
 .card-back {
@@ -63,8 +63,23 @@ body {
   transform: rotateY(180deg);
 }
 
-.card-front h1,
-.card-back h1 {
+.card-number{
+  margin: 10px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  padding: 2px;
+  background: #fff;
+  border: 2px solid #666;
+  color: #666;
+  text-align: center;
+  font-size: 2rem;
+  justify-content: center;
+
+}
+
+.card-front h2,
+.card-back h2 {
   padding-top: 20px;
   font-weight: bold;
   font-size: 24px;
@@ -73,7 +88,7 @@ body {
 
 .card-front p,
 .card-back p {
-  padding-top: 20px;
+  padding: 15px 5px 10px 5px;
   font-weight: normal;
   text-align: center;
 }
@@ -83,9 +98,9 @@ body {
 }
 .high-score {
   text-align: center;
-  padding:2px;
+  padding: 2px;
 }
 .low-score {
   text-align: center;
-  padding:2px;
+  padding: 2px;
 }
