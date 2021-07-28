@@ -33,6 +33,17 @@
     "seq": null
   },
   {
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
+  },
+  {
     "id": 2,
     "slug": "observability",
     "category": "Observability",
@@ -150,6 +161,138 @@
     "description": "How safe do you feel to raise concerns",
     "high_score": "Our concerns are valued and used to help improve the team and org",
     "low_score": "If we riase concerns we are ignored or could get in trouble",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Teams around us",
+    "description": "How well do the teams around you work with you and your team?",
+    "high_score": "Teams around us are very friendly and helpful, it's a joy to work with the other teams",
+    "low_score": "Teams around us are unhelpful and rude",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Management style",
+    "description": "How effective and appropriate are the approaches by management and other senior stakeholders",
+    "high_score": "The management approaches help us to deliver rapidly and safely",
+    "low_score": null,
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Value",
+    "description": "Do you work on valuable things as a team?",
+    "high_score": "We live and breathe a value-driven team approach",
+    "low_score": "We are disconnected from customer or user value",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 7,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Mission",
+    "description": "How well do you know why you are working on things?",
+    "high_score": "We have a clear mission that we are with all stakeholders",
+    "low_score": "It is rarely clear what our mission is",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 8,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Speed",
+    "description": "How rapidly do you work as a team?",
+    "high_score": "We deliver work rapidly together",
+    "low_score": "We seem to take a long time to get things done",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 9,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Fun",
+    "description": "How fun is it to work in your team? How much comraderie and sense of teamwork?",
+    "high_score": "The team is a fun place to be every day",
+    "low_score": "Fun is rarely an aspect of our team work",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 10,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Learning",
+    "description": "How much do you learn as a team?",
+    "high_score": "We learn something every day",
+    "low_score": "We rarely learn something new",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 11,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Support",
+    "description": "How much support do you get as a team?",
+    "high_score": "We are well-supported as a team",
+    "low_score": "We get very little support as a team",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 12,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Pawns or players",
+    "description": "How much control do you have our what you work on and how?",
+    "high_score": "We have strong influence over what we work on",
+    "low_score": "We have very little say in what we work on",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
+  },
+  {
+    "id": 1,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Tech quality",
+    "description": "How healthy is the code base?",
+    "high_score": "Our code base is clean, safe to use and well-tested",
+    "low_score": "Out code base is piled with workarounds and danger areas",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 2,
+    "slug": "tech",
+    "category": "Tech",
+    "title": "Delivery Platform",
+    "description": "How effective and easy to use is the delivery platform underpinning your team's delivery?",
+    "high_score": "The platform is a force multiplier and helps us deliver rapidly and safely. We love the platform.",
+    "low_score": "The platform seems to obstruct us and is difficult to use",
     "more_info_link": null,
     "seq": 1
   }
