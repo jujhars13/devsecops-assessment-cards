@@ -122,8 +122,8 @@
   },
   {
     "id": 1,
-    "slug": "ci-cd",
-    "category": "CI/CD",
+    "slug": "deployments",
+    "category": "Deployments",
     "title": "CI/CD Speed and Stability",
     "description": "CI/CD processes are fast and stable",
     "high_score": "The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis",
@@ -133,8 +133,8 @@
   },
   {
     "id": 2,
-    "slug": "ci-cd",
-    "category": "CI/CD",
+    "slug": "deployments",
+    "category": "Deployments",
     "title": "Blue-Green",
     "description": "Any mechanism to test a new version alongside an existing version when necessary",
     "high_score": "We use fine-grained blue-green deployment techniques, at the level of individual services",
@@ -144,8 +144,8 @@
   },
   {
     "id": 3,
-    "slug": "ci-cd",
-    "category": "CI/CD",
+    "slug": "deployments",
+    "category": "Deployments",
     "title": "Idempotency - Redploying the app",
     "description": "What would happen if we decided to redeploy the application even though nothing has changed",
     "high_score": "No worries",
@@ -155,8 +155,8 @@
   },
   {
     "id": 4,
-    "slug": "ci-cd",
-    "category": "CI/CD",
+    "slug": "deployments",
+    "category": "Deployments",
     "title": "Rerun tests",
     "description": "What would happen if we decided to rerun the test suite multiple times",
     "high_score": "No worries",
@@ -166,8 +166,8 @@
   },
   {
     "id": 5,
-    "slug": "ci-cd",
-    "category": "CI/CD",
+    "slug": "deployments",
+    "category": "Deployments",
     "title": "Fresh config",
     "description": "What would happen if we decided to delete the config and redeploy it",
     "high_score": "No worries, the application would behave as it did before",
@@ -177,14 +177,36 @@
   },
   {
     "id": 6,
-    "slug": "ci-cd",
-    "category": "CI/CD",
+    "slug": "deployments",
+    "category": "Deployments",
     "title": "Environment rebuild",
     "description": "What would happen if we blew away the infra and re-created",
     "high_score": "No worries, everything would be back up quickly and same as before",
     "low_score": "It’s very likely the app would break as there’s a lot of manual clickops",
     "more_info_link": null,
     "seq": 1
+  },
+  {
+    "id": 7,
+    "slug": "deployments",
+    "category": "Deployments",
+    "title": "Release candidates",
+    "description": "Every check-in leads to a potential release",
+    "high_score": "Any checking can generate a safe build that might go to production without a furthur build",
+    "low_score": "We have to have special release candidate builds before we can release",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 8,
+    "slug": "deployments",
+    "category": "Deployments",
+    "title": "Automated config",
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
   },
   {
     "id": null,
@@ -352,6 +374,17 @@
     "seq": 1
   },
   {
+    "id": 13,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Done",
+    "description": "Done means released into production and not causing problems",
+    "high_score": "Done means that the changes are deployed to prod with monitoring to ensure it has not broken anything",
+    "low_score": "Our definition of done is a bit wishy-washy and means “feature tests have passed”",
+    "more_info_link": null,
+    "seq": null
+  },
+  {
     "id": null,
     "slug": null,
     "category": null,
@@ -369,7 +402,7 @@
     "title": "Tech quality",
     "description": "How healthy is the code base?",
     "high_score": "Our code base is clean, safe to use and well-tested",
-    "low_score": "Out code base is piled with workarounds and danger areas",
+    "low_score": "Our code base is piled with workarounds and danger areas",
     "more_info_link": null,
     "seq": 1
   },

@@ -44,7 +44,7 @@ body {
 .card-front.dev-practices {
   background: plum;
 }
-.card-front.ci-cd {
+.card-front.deployments {
   background: crimson;
 }
 .card-front.culture {
