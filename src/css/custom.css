@@ -1,9 +1,69 @@
+
+/* card */
+.main-card-container {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: none;
+}
+
+.question-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  background: #ffc728;
+  color: #000;
+  backface-visibility: hidden;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  backface-visibility: hidden;
+  background: white;
+  color: rgb(19, 19, 19);
+  transform: rotateY(180deg);
+}
+
+.thefront h1,
+.theback h1 {
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p,
+.theback p {
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
 #debug {
   font-size: large;
 }
 .high-score {
-  background-color:green;
+  text-align: center;
 }
 .low-score {
-  background-color: brown;
+  text-align: center;
 }

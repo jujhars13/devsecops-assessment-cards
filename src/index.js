@@ -4,8 +4,16 @@ import data from "./js/cardModel.js";
 const cardContainer = document.getElementById("card-container");
 //document.getElementById("debug").innerHTML = JSON.stringify(data, null, 2);
 
+const cardTemplate = Mustache.render(`
+{{#data}}
+{{#cards}}
+
+{{/cards}}
+{{/data}}
+`, { data });
+
 // render the cards
-const template = Mustache.render(
+const classicTemplate = Mustache.render(
   `
 {{#data}}
 {{#cards}}
@@ -39,4 +47,12 @@ const template = Mustache.render(
   { data }
 );
 
-cardContainer.innerHTML = template;
+cardContainer.innerHTML = cardTemplate;
+
+// add flip animation to cards
+const cards = document.getElementsByClassName("question-card");
+Object.values(cards).forEach(el => {
+  el.addEventListener("click", () => {
+    el.classList.toggle("flipCard");
+  });
+});
