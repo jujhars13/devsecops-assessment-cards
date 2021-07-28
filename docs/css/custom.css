@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(29, 84, 185);
+  background-color: rgb(52 110 217);
 }
 
 .category-name h1 {
@@ -48,7 +48,7 @@ body {
   background: crimson;
 }
 .card-front.culture {
-  background: steelblue;
+  background: greenyellow;
 }
 
 .card-back {
@@ -63,19 +63,18 @@ body {
   transform: rotateY(180deg);
 }
 
-.card-number{
+.card-number {
   margin: 10px;
   border-radius: 50%;
-  width: 56px;
-  height: 56px;
+  width: 65px;
+  height: 65px;
   padding: 2px;
   background: #fff;
   border: 2px solid #666;
   color: #666;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.3rem;
   justify-content: center;
-
 }
 
 .card-front h2,
@@ -86,11 +85,20 @@ body {
   text-align: center;
 }
 
-.card-front p,
-.card-back p {
-  padding: 15px 5px 10px 5px;
-  font-weight: normal;
+.card-points {
+  margin-top: 10px;
+  padding: 2px;
+  background: gray;
+  border: 2px solid #666;
+  color: whitesmoke;
   text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.card-score {
+  margin: 10px;
+  border: 1px solid gray;
 }
 
 #debug {
