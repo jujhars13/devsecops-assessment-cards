@@ -202,11 +202,33 @@
     "slug": "deployments",
     "category": "Deployments",
     "title": "Automated config",
-    "description": null,
-    "high_score": null,
-    "low_score": null,
+    "description": "Config should always be performed by an automated process using values from your configuration repository",
+    "high_score": "All config is done using scripts",
+    "low_score": "Many of our applications are configure manually each time",
     "more_info_link": null,
-    "seq": null
+    "seq": 1
+  },
+  {
+    "id": 9,
+    "slug": "deployments",
+    "category": "Deployments",
+    "title": "Environment History",
+    "description": "It should be possible to clearly see a history and log of changes made to our environments",
+    "high_score": "We have a nice dashboard of deployments and their impact",
+    "low_score": "It is difficult to see the history of changes in an environment",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 10,
+    "slug": "deployments",
+    "category": "Deployments",
+    "title": "DB Changes",
+    "description": "Decouple application deployments from schema migrations",
+    "high_score": "Our application or service is completely decoupled from the underlying db schemas",
+    "low_score": "We must co-ordinate the releases of our applications with any data layer changes",
+    "more_info_link": null,
+    "seq": 1
   },
   {
     "id": null,
@@ -220,7 +242,7 @@
     "seq": null
   },
   {
-    "id": 7,
+    "id": 1,
     "slug": "availability",
     "category": "Availability",
     "title": "MTTR",

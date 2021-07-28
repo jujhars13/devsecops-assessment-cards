@@ -17,9 +17,11 @@ id,slug,category,title,description,high_score,low_score,more_info_link,seq
 5,deployments,Deployments,Fresh config,What would happen if we decided to delete the config and redeploy it,"No worries, the application would behave as it did before",It’s very likely the app would behave differently as there’s a lot of manual changes,,1
 6,deployments,Deployments,Environment rebuild,What would happen if we blew away the infra and re-created,"No worries, everything would be back up quickly and same as before",It’s very likely the app would break as there’s a lot of manual clickops,,1
 7,deployments,Deployments,Release candidates,Every check-in leads to a potential release,Any checking can generate a safe build that might go to production without a furthur build,We have to have special release candidate builds before we can release,,1
-8,deployments,Deployments,Automated config,,,,,
+8,deployments,Deployments,Automated config,Config should always be performed by an automated process using values from your configuration repository,All config is done using scripts,Many of our applications are configure manually each time,,1
+9,deployments,Deployments,Environment History,It should be possible to clearly see a history and log of changes made to our environments,We have a nice dashboard of deployments and their impact,It is difficult to see the history of changes in an environment,,1
+10,deployments,Deployments,DB Changes,Decouple application deployments from schema migrations,Our application or service is completely decoupled from the underlying db schemas,We must co-ordinate the releases of our applications with any data layer changes,,1
 ,,,,,,,,
-7,availability,Availability,MTTR,How long does it take you to restore service in the case of an incident,We track our MTTR across the board and can restore in <10 mins on average,We do not track this properly,https://en.wikipedia.org/wiki/Mean_time_to_repair,1
+1,availability,Availability,MTTR,How long does it take you to restore service in the case of an incident,We track our MTTR across the board and can restore in <10 mins on average,We do not track this properly,https://en.wikipedia.org/wiki/Mean_time_to_repair,1
 ,,,,,,,,
 1,culture,Culture,Easy to Release,How easy is it to release the software that you work to production,It's easy and straightforward to release my changes,It's very difficult to release and takes a long time,,2
 2,culture,Culture,Low friction processes,Do you feel that the processes are suitable for you to deliver software cotinuously,"The whole thing is a well oiled machine, everybody is in their groove and we barely feel any friction. The processes help us to do the right thing","The processes are painful, too numerous and makes us cry",,1
