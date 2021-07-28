@@ -1,20 +1,17 @@
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-color:rgb(29, 84, 185);
 }
 
 .category-name h1{
   color:white;
-  padding-top: 20px;
+  padding: 30px 20px 5px 20px;
 }
 
 /* card */
 .main-card-container {
   position: relative;
-  width: 350px;
-  height: 420px;
+  width: 320px;
+  height: 480px;
   background: none;
 }
 
@@ -41,19 +38,18 @@ body {
   backface-visibility: hidden;
 }
 
-.card-front.Operability{
+.card-front.Observability{
   background: cadetblue;
 }
 .card-front.Testability{
   background:plum;
 }
 .card-front.Availability{
-  background:seashell;
+  background:crimson;
 }
 .card-front.Culture{
   background:steelblue;
 }
-
 
 .card-back {
   position: absolute;
@@ -69,7 +65,7 @@ body {
 
 .card-front h1,
 .card-back h1 {
-  padding: 30px;
+  padding-top: 20px;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
@@ -77,7 +73,7 @@ body {
 
 .card-front p,
 .card-back p {
-  padding: 30px;
+  padding-top: 20px;
   font-weight: normal;
   text-align: center;
 }
@@ -87,7 +83,9 @@ body {
 }
 .high-score {
   text-align: center;
+  padding:2px;
 }
 .low-score {
   text-align: center;
+  padding:2px;
 }
