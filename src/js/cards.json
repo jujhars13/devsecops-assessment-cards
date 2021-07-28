@@ -11,6 +11,17 @@
     "seq": 1
   },
   {
+    "id": 5,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Feature Coverage",
+    "description": "What proportion of the features are covered by a test",
+    "high_score": "Every one of our features has at least one test",
+    "low_score": "Less than 25% of our features have corresponding tests",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
     "id": 2,
     "slug": "observability",
     "category": "Observability",
@@ -44,15 +55,15 @@
     "seq": 1
   },
   {
-    "id": 5,
-    "slug": "dev-practices",
-    "category": "Dev Practices",
-    "title": "Feature Coverage",
-    "description": "What proportion of the features are covered by a test",
-    "high_score": "Every one of our features has at least one test",
-    "low_score": "Less than 25% of our features have corresponding tests",
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
     "more_info_link": null,
-    "seq": 1
+    "seq": null
   },
   {
     "id": 6,
@@ -77,7 +88,7 @@
     "seq": 1
   },
   {
-    "id": 8,
+    "id": 1,
     "slug": "culture",
     "category": "Culture",
     "title": "Easy to Release",
@@ -88,7 +99,7 @@
     "seq": 2
   },
   {
-    "id": 9,
+    "id": 2,
     "slug": "culture",
     "category": "Culture",
     "title": "Low friction processes",
@@ -99,7 +110,7 @@
     "seq": 1
   },
   {
-    "id": 10,
+    "id": 3,
     "slug": "culture",
     "category": "Culture",
     "title": "Psychological Safety",

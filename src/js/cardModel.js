@@ -18,12 +18,16 @@ raw.forEach((el) => {
   categories[el.category] = {};
 });
 raw.forEach((el) => {
-  categories[el.category].categoryName = el.category;
-  categories[el.category].cards = [];
+  if (el.category) {
+    categories[el.category].categoryName = el.category;
+    categories[el.category].cards = [];
+  }
 });
 raw.forEach((el) => {
-  categories[el.category].categoryName = el.category;
-  categories[el.category].cards.push(el);
+  if (el.category) {
+    categories[el.category].categoryName = el.category;
+    categories[el.category].cards.push(el);
+  }
 });
 
 export default Object.values(categories);
