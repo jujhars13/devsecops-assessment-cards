@@ -407,6 +407,17 @@
     "seq": 1
   },
   {
+    "id": 3,
+    "slug": "availability",
+    "category": "Availability",
+    "title": "MTTR",
+    "description": "How long does it take to restore your application or service after an incident?",
+    "high_score": "We track MTTR and we restore service in 10 mins automatically and test this in the deployment pipeline",
+    "low_score": "We have no idea - we do not track this",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
     "id": null,
     "slug": null,
     "category": null,
@@ -678,6 +689,105 @@
     "description": "How do we know when an SSL/TLS certificate is close to expiry?",
     "high_score": "We use auto-renewal of certificates combined with certificate monitoring so we can take remedial action ahead of time",
     "low_score": "We do not know when our certificates are going to expire",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": null,
+    "slug": null,
+    "category": null,
+    "title": null,
+    "description": null,
+    "high_score": null,
+    "low_score": null,
+    "more_info_link": null,
+    "seq": null
+  },
+  {
+    "id": 1,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Branch Age",
+    "description": "We develop directly on master/trunk and any feature branches last no more than 2 days",
+    "high_score": "We developo directly no master/trunk and any feature branches last no more than 2 days",
+    "low_score": "Our feature branches last for many sprints",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 2,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Retrospectives",
+    "description": "How effective are your team retrospectives",
+    "high_score": "Our retrospectives are really energising,  valuable and effective for the team and we look forward to them",
+    "low_score": "We do not have regular retrospectives",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 3,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Onboarding",
+    "description": "How effective is the onboarding process for new teams and new staff",
+    "high_score": "The onboarding process is very simple, straightforward and clear",
+    "low_score": "The onboarding process is incredibly difficult and really hampers process",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Work in Progress",
+    "description": "How many things does your team work on at the same time? (Minimum, Typical)",
+    "high_score": "We have explicitly limited our WIP based on queing theory (or cost of Delay) and the WIP is equal or less than the number of people on the team",
+    "low_score": "We have significantly more Work in Progress (WIP) items than team members",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Cycle Time",
+    "description": "How long does it take for a code change to go from version conotrol to running in Productiion? (Minimum, Typical)",
+    "high_score": "1 Hour or Less",
+    "low_score": "2 Weeks or More",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Failed Changes",
+    "description": "What proportion of changes to your application or service in Production fail or need remediation? (This is typically the number of failed deployments)",
+    "high_score": "Less than 5% of our changes / deployments fail in Production",
+    "low_score": "More than 20% of our changes / deployments fail in Production",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 7,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Innovation",
+    "description": "How well are you able to innovate around delivery approaches?",
+    "high_score": "We make our reserve time for delivery innovation every week and track changes as part of our team metrics",
+    "low_score": "We do not have time to innovate",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 8,
+    "slug": "flow",
+    "category": "Flow",
+    "title": "Deployment Frequency",
+    "description": "How often does your team deploy to Production?",
+    "high_score": "Every 2 days or less",
+    "low_score": "Every 2 weeks or longer in practice",
     "more_info_link": null,
     "seq": 1
   }
