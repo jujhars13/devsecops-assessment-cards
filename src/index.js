@@ -24,6 +24,9 @@ const cardTemplate = Mustache.render(
     </div>
     <div class="card-back">
       <div class="card-number">{{id}}</div>
+      {{#important}}
+      <span class="card-important"><i class="fas fa-star"></i></span>
+      {{/important}}
       <h2>{{title}}</h2>
       <div class="card-score">
         <p class="card-points">4 points</p>

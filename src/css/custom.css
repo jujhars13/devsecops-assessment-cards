@@ -76,7 +76,7 @@ span.card-important {
   border-radius: 10px;
   text-align: center;
   backface-visibility: hidden;
-  background: white;
+  background: rgb(221, 221, 221);
   color: rgb(19, 19, 19);
   transform: rotateY(180deg);
 }
@@ -97,7 +97,7 @@ span.card-important {
 
 .card-front h2,
 .card-back h2 {
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: bold;
   font-size: 24px;
   text-align: center;
