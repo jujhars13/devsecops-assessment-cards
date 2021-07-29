@@ -50,6 +50,9 @@ body {
 .card-front.culture {
   background: greenyellow;
 }
+.card-front.flow {
+  background:bisque;
+}
 
 .card-back {
   position: absolute;
