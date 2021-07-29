@@ -41,6 +41,12 @@ body {
 .card-front.observability {
   background: cadetblue;
 }
+.card-front.availability {
+  background: rgb(241, 12, 191);
+}
+.card-front.tech{
+  background: rgb(170, 11, 151);
+}
 .card-front.dev-practices {
   background: plum;
 }
@@ -54,12 +60,13 @@ body {
   background: bisque;
 }
 
-/** show a star on the card **/
+/** show a star on important cards **/
 span.card-important {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  background: white;
+  top:2%;
+  right:3%;
+  font-size: 1rem;
+  color:yellow;
 }
 
 .card-back {
@@ -112,9 +119,15 @@ span.card-important {
   border: 1px solid gray;
 }
 
-#debug {
-  font-size: large;
+footer.card-footer  {
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  opacity: 60%;
+  color:white;
+  background-color: rgb(124, 116, 116);
 }
+
 .high-score {
   text-align: center;
   padding: 2px;
@@ -122,4 +135,8 @@ span.card-important {
 .low-score {
   text-align: center;
   padding: 2px;
+}
+
+#debug {
+  font-size: large;
 }
