@@ -99,6 +99,83 @@
     "seq": 1
   },
   {
+    "id": 10,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Semantic Versioning ",
+    "description": "How strict are you with your approach to semantic versioning",
+    "high_score": "We use semantic versioning to communicate the meaning of changes.  We strive to make no breaking changes at all.  We use the tolerant reader pattern.  We peg the major.minor release version of our dependencies",
+    "low_score": "We just use the latest versions of each component or package and just increment our own version numbers",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 11,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Other Code",
+    "description": "How confident are you in the code from other internal teams that you depend on",
+    "high_score": "We are confident in our colleagues code, their docs are clear and coverage is rock solid",
+    "low_score": "Code from other teams is really flakey and we have to reach out often to try and understand their interfaces",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 12,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Test First",
+    "description": "What proportion of the time you spend on writing code is spent on writing tests",
+    "high_score": "We use a test first approach all the time and spend ~80% of our coding time writing our tests",
+    "low_score": "We often do not have time to write tests",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 13,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Unit test coverage",
+    "description": "What is your current code coverage level",
+    "high_score": "It’s about 80% or greater",
+    "low_score": "Our unit test coverage is ~10% or lower",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 14,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Test Data",
+    "description": "How do you get your test data?",
+    "high_score": "All our test data is generated from scripts and injected into the data stores",
+    "low_score": "We have manual processes for setting up test data for environments",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 15,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Deployment code",
+    "description": "How is your deployment code structured?  Do you have tests for your deployment pipeline code",
+    "high_score": "We have deployment verification tests for key parts of our build and automation suite.  The code is modular and well structured",
+    "low_score": "We do not test our build and deployment code, it’s just a handful of scritps",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 16,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Testability",
+    "description": "How easy is it to test your code?",
+    "high_score": "We use dependency injection extensivly and can easily stub out our dependencies in order to test the code",
+    "low_score": "Our code is tightly coupled and makes it hard to test",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
     "id": null,
     "slug": null,
     "category": null,
