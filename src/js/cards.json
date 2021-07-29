@@ -214,24 +214,13 @@
     "category": "Observability",
     "title": "Hardware insights",
     "description": "How much insight do we have into the behaviour of our infra/deployment fabric",
-    "high_score": "We can tell you the CPU, RAM, Network & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
+    "high_score": "We can tell you the CPU, RAM, NetworkIO & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
     "low_score": "We only have very rough measures of our hardware performance",
     "more_info_link": null,
     "seq": 1
   },
   {
     "id": 4,
-    "slug": "observability",
-    "category": "Observability",
-    "title": "Service Status",
-    "description": "We build a dashboard in collaboration with the operations teams. UX is a key consideration",
-    "high_score": "Operations teams tend to discover the status indicators themselves",
-    "low_score": null,
-    "more_info_link": "1",
-    "seq": null
-  },
-  {
-    "id": 5,
     "slug": "observability",
     "category": "Observability",
     "title": "Logging Working",
@@ -242,13 +231,24 @@
     "seq": 1
   },
   {
-    "id": 6,
+    "id": 5,
     "slug": "observability",
     "category": "Observability",
     "title": "System Health",
     "description": "How do we know that the system is healthy (or unhealthy)?",
     "high_score": "We query the software using a standard http healthcheck URL and synthetic transactions for key scenarios",
     "low_score": "We wait for checks made manually by another team to tell us if our software is healthy",
+    "more_info_link": null,
+    "seq": 1
+  },
+  {
+    "id": 6,
+    "slug": "observability",
+    "category": "Observability",
+    "title": "Service Status",
+    "description": "How do we display the current service/system status to ops teams and business stakeholders",
+    "high_score": "We build a dashboard in collaboration with the operations and business teams. UX is a key consideration",
+    "low_score": "Operations teams tend to discover the status indicators themselves",
     "more_info_link": null,
     "seq": 1
   },
