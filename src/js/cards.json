@@ -8,7 +8,7 @@
     "high_score": "We can run the majority of config changes independently of our code release.  All changes are auditable and revertable",
     "low_score": "We have to manual changes",
     "more_info_link": null,
-    "important": 1,
+    "important": null,
     "seq": 1
   },
   {
