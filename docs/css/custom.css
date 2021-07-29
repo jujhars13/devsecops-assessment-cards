@@ -51,7 +51,15 @@ body {
   background: greenyellow;
 }
 .card-front.flow {
-  background:bisque;
+  background: bisque;
+}
+
+/** show a star on the card **/
+span.card-important {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: white;
 }
 
 .card-back {

@@ -15,6 +15,9 @@ const cardTemplate = Mustache.render(
   <div class="question-card">
     <div class="card-front {{slug}}">
       <div class="card-number">{{id}}</div>
+      {{#important}}
+      <span class="card-important"><i class="fas fa-star"></i></span>
+      {{/important}}
       <h2>{{title}}</h2>
       <p>{{description}}</p>
       <footer class="card-footer">{{categoryName}}</footer>

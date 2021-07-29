@@ -25,6 +25,7 @@
     "webpack-cli": "^4.4.0"
   },
   "dependencies": {
+    "@primer/octicons": "^15.0.0",
     "mustache": "^4.2.0"
   }
 }
