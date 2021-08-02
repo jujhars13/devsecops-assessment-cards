@@ -20,7 +20,7 @@
     "high_score": "Every one of our features has at least one test",
     "low_score": "Less than 25% of our features have corresponding tests",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -32,7 +32,7 @@
     "high_score": "We have very little unplanned work and have spare capacity to handle any that comes in",
     "low_score": "More than half our work in any given sprint is unplanned",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -40,11 +40,11 @@
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Broken Builds",
-    "description": "Don't Check In on Broken Build except to fix the broken build",
+    "description": "Don't check In on broken build except to fix the broken build",
     "high_score": "We guard the build with care and never check-in on a broken build",
     "low_score": "We cannot easily know when a team has broken our build",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -56,23 +56,11 @@
     "high_score": "If the pipeline fails it is clear which team is responsible so we stop our work immediately and fix the problem",
     "low_score": "The pipeline fails so often it is difficult to know which team broke the build",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
     "id": 6,
-    "slug": "dev-practices",
-    "category": "Dev Practices",
-    "title": "Idempotenent Deployment",
-    "description": "We can deploy the same version repeatedly with the same result",
-    "high_score": "We can redeploy the same version many times with the same result",
-    "low_score": "It is difficult to get repeatable deployments",
-    "more_info_link": null,
-    "important": null,
-    "seq": 1
-  },
-  {
-    "id": 7,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Spend on Operability",
@@ -84,7 +72,7 @@
     "seq": 1
   },
   {
-    "id": 8,
+    "id": 7,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Testability",
@@ -96,19 +84,19 @@
     "seq": 1
   },
   {
-    "id": 9,
+    "id": 8,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Sensitive Data",
-    "description": "How do we ensure that sensitive data in logs is masked or hidden?",
+    "description": "How do we show that the software system is easy to test? What do we provide and to whom?",
     "high_score": "We test data masking using feature tests that search for log messages after application behaviour is executed",
     "low_score": "We do not test for sensitive data in logs",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
-    "id": 10,
+    "id": 9,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Semantic Versioning ",
@@ -116,11 +104,11 @@
     "high_score": "We use semantic versioning to communicate the meaning of changes.  We strive to make no breaking changes at all.  We use the tolerant reader pattern.  We peg the major.minor release version of our dependencies",
     "low_score": "We just use the latest versions of each component or package and just increment our own version numbers",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
-    "id": 11,
+    "id": 10,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Other Code",
@@ -128,11 +116,11 @@
     "high_score": "We are confident in our colleagues code, their docs are clear and coverage is rock solid",
     "low_score": "Code from other teams is really flakey and we have to reach out often to try and understand their interfaces",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
-    "id": 12,
+    "id": 11,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Test First",
@@ -140,15 +128,15 @@
     "high_score": "We use a test first approach all the time and spend ~80% of our coding time writing our tests",
     "low_score": "We often do not have time to write tests",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
-    "id": 13,
+    "id": 12,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Unit test coverage",
-    "description": "What is your current code coverage level",
+    "description": "What is your current code coverage level?",
     "high_score": "It’s about 80% or greater",
     "low_score": "Our unit test coverage is ~10% or lower",
     "more_info_link": null,
@@ -156,7 +144,7 @@
     "seq": 1
   },
   {
-    "id": 14,
+    "id": 13,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Test Data",
@@ -168,7 +156,7 @@
     "seq": 1
   },
   {
-    "id": 15,
+    "id": 14,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Deployment code",
@@ -180,7 +168,7 @@
     "seq": 1
   },
   {
-    "id": 16,
+    "id": 15,
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Testability",
@@ -188,7 +176,31 @@
     "high_score": "We use dependency injection extensivly and can easily stub out our dependencies in order to test the code",
     "low_score": "Our code is tightly coupled and makes it hard to test",
     "more_info_link": null,
+    "important": true,
+    "seq": 1
+  },
+  {
+    "id": 16,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Rugged Manifesto",
+    "description": "The rugged manifesto is a sensible set of practices to make our software more rugged",
+    "high_score": "We do our best to follow this manifesto",
+    "low_score": "Never heard of it before",
+    "more_info_link": "https://ruggedsoftware.org/",
     "important": null,
+    "seq": 1
+  },
+  {
+    "id": 17,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "12 Factor Apps",
+    "description": "The rugged manifesto is a sensible set of established practices to make our software more portable",
+    "high_score": "We do our best to follow this manifesto",
+    "low_score": "Never heard of it before",
+    "more_info_link": "https://12factor.net/",
+    "important": true,
     "seq": 1
   },
   {
@@ -208,7 +220,7 @@
     "slug": "observability",
     "category": "Observability",
     "title": "Feature Toggles Observability",
-    "description": "How do we know which feature toggles are active for a deployment",
+    "description": "How do we know which feature toggles are active for a deployments?",
     "high_score": "We have a simple UI or API to see what's on in which environment",
     "low_score": "We track things manually on paper or in our heads",
     "more_info_link": null,
@@ -220,7 +232,7 @@
     "slug": "observability",
     "category": "Observability",
     "title": "Full stack Observability",
-    "description": "Do you have multiple views of the entire stack's telemetry",
+    "description": "Do you have multiple views of the entire stack's telemetry?",
     "high_score": "We can see through the entire stack from the metal all the way up to the UI issues and performance",
     "low_score": "We can only see one or two layers and don't really tie them together to tell a story",
     "more_info_link": null,
@@ -260,7 +272,7 @@
     "high_score": "We query the software using a standard http healthcheck URL and synthetic transactions for key scenarios",
     "low_score": "We wait for checks made manually by another team to tell us if our software is healthy",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -296,7 +308,7 @@
     "high_score": "The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis",
     "low_score": "CI/CD takes so long to do or is very fragile and we end up losing whole chunks of our day to it.",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -308,7 +320,7 @@
     "high_score": "We use fine-grained blue-green deployment techniques, at the level of individual services",
     "low_score": "We do not use any blue-green deployment techniques",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -332,7 +344,7 @@
     "high_score": "No worries",
     "low_score": "We don’t know what would happen, the test suite is flakey",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -356,7 +368,7 @@
     "high_score": "No worries, everything would be back up quickly and same as before",
     "low_score": "It’s very likely the app would break as there’s a lot of manual clickops",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -392,7 +404,7 @@
     "high_score": "We have a nice dashboard of deployments and their impact",
     "low_score": "It is difficult to see the history of changes in an environment",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -428,7 +440,7 @@
     "high_score": "We track our MTTR across the board and can restore in <10 mins on average",
     "low_score": "We do not track this properly",
     "more_info_link": "https://en.wikipedia.org/wiki/Mean_time_to_repair",
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -452,7 +464,7 @@
     "high_score": "We track MTTR and we restore service in 10 mins automatically and test this in the deployment pipeline",
     "low_score": "We have no idea - we do not track this",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -476,7 +488,7 @@
     "high_score": "It's easy and straightforward to release my changes",
     "low_score": "It's very difficult to release and takes a long time",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 2
   },
   {
@@ -488,7 +500,7 @@
     "high_score": "The whole thing is a well oiled machine, everybody is in their groove and we barely feel any friction. The processes help us to do the right thing",
     "low_score": "The processes are painful, too numerous and makes us cry",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -500,7 +512,7 @@
     "high_score": "Our concerns are valued and used to help improve the team and org",
     "low_score": "If we riase concerns we are ignored or could get in trouble",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -512,7 +524,7 @@
     "high_score": "Teams around us are very friendly and helpful, it's a joy to work with the other teams",
     "low_score": "Teams around us are unhelpful and rude",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -536,7 +548,7 @@
     "high_score": "We live and breathe a value-driven team approach",
     "low_score": "We are disconnected from customer or user value",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -548,7 +560,7 @@
     "high_score": "We have a clear mission that we are with all stakeholders",
     "low_score": "It is rarely clear what our mission is",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -572,7 +584,7 @@
     "high_score": "The team is a fun place to be every day",
     "low_score": "Fun is rarely an aspect of our team work",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -584,7 +596,7 @@
     "high_score": "We learn something every day",
     "low_score": "We rarely learn something new",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -608,7 +620,7 @@
     "high_score": "We have strong influence over what we work on",
     "low_score": "We have very little say in what we work on",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -628,11 +640,23 @@
     "slug": "culture",
     "category": "Culture",
     "title": "Collaboration",
-    "description": "How do we collaborate on operations aspects of the systems  such as logging, monitoring, alerting and NFRs",
+    "description": "How do we collaborate on operations aspects of the systems such as logging, monitoring, alerting and NFRs",
     "high_score": "We collaboratee on operational aspects from the very first week of the project",
     "low_score": "We respond after go-live wheen the tickets are raised by the live ops and service teams",
     "more_info_link": null,
     "important": null,
+    "seq": 1
+  },
+  {
+    "id": 19,
+    "slug": "culture",
+    "category": "Culture",
+    "title": "Our tools are cool",
+    "description": "Do you feel that your tools, hardware and software are up to scratch",
+    "high_score": "We love our tools and can solve any problem with them",
+    "low_score": "My machine is so slow and crashes all the time, to install any software I have to submit a ticket",
+    "more_info_link": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -656,7 +680,7 @@
     "high_score": "Our code base is clean, safe to use and well-tested",
     "low_score": "Our code base is piled with workarounds and danger areas",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -700,7 +724,7 @@
     "slug": "tech",
     "category": "Tech",
     "title": "Stubs",
-    "description": "Simulate external systems. Treat almost every other system as 'externa'",
+    "description": "Simulate external systems. Treat almost every other system as 'external'",
     "high_score": "The stubs we consume and write are good quality and give us a degree of confidence that our tests are working well.",
     "low_score": "There are few stubs available and we do noot have enough time to write stubs ourselves.",
     "more_info_link": null,
@@ -712,11 +736,11 @@
     "slug": "tech",
     "category": "Tech",
     "title": "Call Tracing",
-    "description": "How do we trave a call/request end-to-end through the system?",
+    "description": "How do we travel a call/request end-to-end through the system?",
     "high_score": "We use a standard tracing library to trace calls through the system. Tracing fields are maintained across component boundaries",
     "low_score": "We do not trace calls through the system",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -728,7 +752,7 @@
     "high_score": "We run a set of indicative performances tests within our deployment pipeline that are run on every check-in to version control.",
     "low_score": "We rely solely on the performance team to validate the performance of our application or service.",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -736,11 +760,11 @@
     "slug": "tech",
     "category": "Tech",
     "title": "Failure Modes",
-    "description": "How can. We see and share the different known failure modes (failure scenarios) for the system?",
+    "description": "How can we see and share the different known failure modes (failure scenarios) for the system?",
     "high_score": "We use a set of error identifiers to define the failure modes in our software and we use these identifiers in our log messages",
     "low_score": "We do not relaly know how the system might fail",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -752,7 +776,7 @@
     "high_score": "We use auto-renewal of certificates combined with certificate monitoring so we can take remedial action ahead of time",
     "low_score": "We do not know when our certificates are going to expire",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -788,7 +812,7 @@
     "high_score": "Our retrospectives are really energising,  valuable and effective for the team and we look forward to them",
     "low_score": "We do not have regular retrospectives",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -800,7 +824,7 @@
     "high_score": "The onboarding process is very simple, straightforward and clear",
     "low_score": "The onboarding process is incredibly difficult and really hampers process",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -812,7 +836,7 @@
     "high_score": "We have explicitly limited our WIP based on queing theory (or cost of Delay) and the WIP is equal or less than the number of people on the team",
     "low_score": "We have significantly more Work in Progress (WIP) items than team members",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -820,11 +844,11 @@
     "slug": "flow",
     "category": "Flow",
     "title": "Cycle Time",
-    "description": "How long does it take for a code change to go from version conotrol to running in Productiion? (Minimum, Typical)",
+    "description": "How long does it take for a code change to go from version control to running in Production? (Minimum, Typical)",
     "high_score": "1 Hour or Less",
     "low_score": "2 Weeks or More",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -836,7 +860,7 @@
     "high_score": "Less than 5% of our changes / deployments fail in Production",
     "low_score": "More than 20% of our changes / deployments fail in Production",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -860,7 +884,7 @@
     "high_score": "Every 2 days or less",
     "low_score": "Every 2 weeks or longer in practice",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   }
 ]
