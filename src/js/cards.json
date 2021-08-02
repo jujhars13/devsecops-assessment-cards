@@ -235,7 +235,7 @@
     "description": "Do you have multiple views of the entire stack's telemetry?",
     "high_score": "We can see through the entire stack from the metal all the way up to the UI issues and performance",
     "low_score": "We can only see one or two layers and don't really tie them together to tell a story",
-    "more_info_link": null,
+    "more_info_link": "https://devsecops.jujhar.com/observability-strategy/",
     "important": true,
     "seq": 1
   },
