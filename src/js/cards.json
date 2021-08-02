@@ -495,7 +495,7 @@
     "id": 1,
     "slug": "culture",
     "category": "Culture",
-    "title": "Easy to Release",
+    "title": "Path to production",
     "description": "How easy is it to release the software that you work to production",
     "high_score": "It's easy and straightforward to release my changes",
     "low_score": "It's very difficult to release and takes a long time",
