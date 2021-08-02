@@ -459,18 +459,6 @@
     "id": 3,
     "slug": "availability",
     "category": "Availability",
-    "title": "MTTR",
-    "description": "How long does it take to restore your application or service after an incident?",
-    "high_score": "We track MTTR and we restore service in 10 mins automatically and test this in the deployment pipeline",
-    "low_score": "We have no idea - we do not track this",
-    "more_info_link": null,
-    "important": true,
-    "seq": 1
-  },
-  {
-    "id": 4,
-    "slug": "availability",
-    "category": "Availability",
     "title": "Service Restoration",
     "description": "How do we keep things up and running: Can you recover quickly from incidents a low MTTR? Can you detect incidents ahead of time? Can you failover to backup systems\"",
     "high_score": "We have fully adopted SRE practices across the board. We continuously monitor and improve on your numbers",
@@ -480,7 +468,7 @@
     "seq": 1
   },
   {
-    "id": 5,
+    "id": 4,
     "slug": "availability",
     "category": "Availability",
     "title": "Observability",
