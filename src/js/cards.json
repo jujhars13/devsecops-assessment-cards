@@ -248,7 +248,7 @@
     "high_score": "We can tell you the CPU, RAM, NetworkIO & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
     "low_score": "We only have very rough measures of our hardware performance",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -308,7 +308,7 @@
     "high_score": "The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis",
     "low_score": "CI/CD takes so long to do or is very fragile and we end up losing whole chunks of our day to it.",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -320,7 +320,7 @@
     "high_score": "We use fine-grained blue-green deployment techniques, at the level of individual services",
     "low_score": "We do not use any blue-green deployment techniques",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -404,7 +404,7 @@
     "high_score": "We have a nice dashboard of deployments and their impact",
     "low_score": "It is difficult to see the history of changes in an environment",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -464,7 +464,7 @@
     "high_score": "We have fully adopted SRE practices across the board. We continuously monitor and improve on your numbers",
     "low_score": "Little to no availability practices",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -760,9 +760,9 @@
     "slug": "tech",
     "category": "Tech",
     "title": "Call Tracing",
-    "description": "How do we travel a call/request end-to-end through the system?",
+    "description": "How do we trace a call/request end-to-end through the system?",
     "high_score": "We use a standard tracing library to trace calls through the system. Tracing fields are maintained across component boundaries",
-    "low_score": "We do not trace calls through the system",
+    "low_score": "We do not trace calls through the system and have to piece the info together by hand",
     "more_info_link": null,
     "important": true,
     "seq": 1
@@ -891,9 +891,9 @@
     "id": 7,
     "slug": "flow",
     "category": "Flow",
-    "title": "Innovation",
+    "title": "Innovation and Improvements",
     "description": "How well are you able to innovate around delivery approaches?",
-    "high_score": "We make our reserve time for delivery innovation every week and track changes as part of our team metrics",
+    "high_score": "We make our reserve time for innovation and process improvements every week and track changes as part of our team metrics",
     "low_score": "We do not have time to innovate",
     "more_info_link": null,
     "important": null,
