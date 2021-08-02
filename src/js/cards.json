@@ -248,7 +248,7 @@
     "high_score": "We can tell you the CPU, RAM, NetworkIO & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
     "low_score": "We only have very rough measures of our hardware performance",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
