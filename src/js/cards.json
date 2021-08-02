@@ -460,7 +460,7 @@
     "slug": "availability",
     "category": "Availability",
     "title": "Service Restoration",
-    "description": "How do we keep things up and running: Can you recover quickly from incidents a low MTTR? Can you detect incidents ahead of time? Can you failover to backup systems\"",
+    "description": "How do we keep things up and running: Can you recover quickly from incidents a low MTTR? Can you detect incidents ahead of time? Can you failover to backup systems",
     "high_score": "We have fully adopted SRE practices across the board. We continuously monitor and improve on your numbers",
     "low_score": "Little to no availability practices",
     "more_info_link": null,
@@ -475,6 +475,18 @@
     "description": "How much observability do you have on your systems environments, inputs, outputs and behaviour. Do you have enough information on how your system runs to make improvements/solve problems?",
     "high_score": "Just the basics you get for free from Cloudwatch, an on-server agent, htop, task manager etc.",
     "low_score": "Max Instrumentation and SLO driven dashboards",
+    "more_info_link": null,
+    "important": true,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "availability",
+    "category": "Availability",
+    "title": "Run without you",
+    "description": "If all of your team took some time off, how long would your systems keep running without you?",
+    "high_score": "Our prod env will run for weeks without interference and self-heal",
+    "low_score": "Everything will fall on it's face within a day without our heroics",
     "more_info_link": null,
     "important": true,
     "seq": 1
