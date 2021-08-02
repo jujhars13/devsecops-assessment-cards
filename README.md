@@ -14,7 +14,7 @@ Use these cards to assess the DevSecOps capability of a team which you can then 
 # OPTIONAL use the awesome `reload` which auto-refreshes your browser on change using websockets
 # `npm install -g webpack webpack-cli reload`
 
-# install deps
+# install dev and app deps
 npm install
 
 # in the root of the repo
@@ -38,8 +38,8 @@ NODE_ENV=production node_modules/.bin/webpack build
 
 ## The dataset as CSV to JSON
 
-We find working with CSVs the most straightforward, using Excel or Libre Office Calc.
-You can then produce the other formats we need (`jsonl` -> `json`) using Python [`csvkit`](https://csvkit.readthedocs.io/en/latest/tutorial.html) and then [`jq`](https://stedolan.github.io/jq/) to split out a denormalised json array that's easier to digest by our client-side js:
+We find working with CSVs the most straightforward using a standard spreadsheet app.
+You can then produce the other formats we need (`jsonl` -> `json`) using Python [`csvkit`](https://csvkit.readthedocs.io/en/latest/tutorial.html) and then [`jq`](https://stedolan.github.io/jq/) to spit out a denormalised json array that's easier to digest by our client-side js:
 
 ```bash
 # use Python csvjson from csvkit to convert our csv file to a jsonl then to a json file
