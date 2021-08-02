@@ -88,11 +88,11 @@
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "Sensitive Data",
-    "description": "How do we show that the software system is easy to test? What do we provide and to whom?",
+    "description": "How do we ensure that sensitive data in logs is masked or hidden?",
     "high_score": "We test data masking using feature tests that search for log messages after application behaviour is executed",
     "low_score": "We do not test for sensitive data in logs",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -463,6 +463,30 @@
     "description": "How long does it take to restore your application or service after an incident?",
     "high_score": "We track MTTR and we restore service in 10 mins automatically and test this in the deployment pipeline",
     "low_score": "We have no idea - we do not track this",
+    "more_info_link": null,
+    "important": true,
+    "seq": 1
+  },
+  {
+    "id": 4,
+    "slug": "availability",
+    "category": "Availability",
+    "title": "Service Restoration",
+    "description": "How do we keep things up and running: Can you recover quickly from incidents a low MTTR? Can you detect incidents ahead of time? Can you failover to backup systems\"",
+    "high_score": "We have fully adopted SRE practices across the board. We continuously monitor and improve on your numbers",
+    "low_score": "Little to no availability practices",
+    "more_info_link": null,
+    "important": true,
+    "seq": 1
+  },
+  {
+    "id": 5,
+    "slug": "availability",
+    "category": "Availability",
+    "title": "Observability",
+    "description": "How much observability do you have on your systems environments, inputs, outputs and behaviour. Do you have enough information on how your system runs to make improvements/solve problems?",
+    "high_score": "Just the basics you get for free from Cloudwatch, an on-server agent, htop, task manager etc.",
+    "low_score": "Max Instrumentation and SLO driven dashboards",
     "more_info_link": null,
     "important": true,
     "seq": 1
