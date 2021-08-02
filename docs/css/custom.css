@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(52 110 217);
+  background-color: rgb(104 131 180);
 }
 
 .category-name h1 {
@@ -16,6 +16,9 @@ body {
 }
 
 .question-card {
+
+  border: 1px solid;
+  border-radius: 10px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -42,19 +45,19 @@ body {
   background: cadetblue;
 }
 .card-front.availability {
-  background: rgb(241, 12, 191);
+  background: rgb(255 147 231);
 }
 .card-front.tech{
-  background: rgb(170, 11, 151);
+  background: rgb(11 170 82);
 }
 .card-front.dev-practices {
   background: plum;
 }
 .card-front.deployments {
-  background: crimson;
+  background: #f2b3bf;
 }
 .card-front.culture {
-  background: greenyellow;
+  background: #8eba4a;
 }
 .card-front.flow {
   background: bisque;
@@ -76,7 +79,7 @@ span.card-important {
   border-radius: 10px;
   text-align: center;
   backface-visibility: hidden;
-  background: rgb(221, 221, 221);
+  background: rgb(217 217 217);
   color: rgb(19, 19, 19);
   transform: rotateY(180deg);
 }
@@ -103,9 +106,13 @@ span.card-important {
   text-align: center;
 }
 
-.card-points {
-  margin-top: 10px;
+.card-score {
+  margin: 10px;
   padding: 2px;
+  border: 1px solid black;
+}
+
+.card-points {
   background: gray;
   border: 2px solid #666;
   color: whitesmoke;
@@ -114,9 +121,11 @@ span.card-important {
   justify-content: center;
 }
 
-.card-score {
-  margin: 10px;
-  border: 1px solid gray;
+.high-score {
+  background-color: #57bf81;
+}
+.low-score {
+  background-color: #bf5757;
 }
 
 footer.card-footer  {
@@ -128,14 +137,6 @@ footer.card-footer  {
   background-color: rgb(124, 116, 116);
 }
 
-.high-score {
-  text-align: center;
-  padding: 2px;
-}
-.low-score {
-  text-align: center;
-  padding: 2px;
-}
 
 #debug {
   font-size: large;

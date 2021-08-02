@@ -29,11 +29,11 @@ const cardTemplate = Mustache.render(
       {{/important}}
       <h2>{{title}}</h2>
       <div class="card-score">
-        <p class="card-points">4 points</p>
+        <p class="card-points high-score">4 points</p>
         <p>{{high_score}}</p>
       </div>
       <div class="card-score">
-        <p class="card-points">1 point</p>
+        <p class="card-points low-score">1 point</p>
         <p>{{low_score}}</p>
       </div>
       {{#more_info_link}}
