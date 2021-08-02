@@ -42,7 +42,7 @@ id,slug,category,title,description,high_score,low_score,more_info_link,important
 ,,,,,,,,,
 1,culture,Culture,Path to production,How easy is it to release the software that you work to production,It's easy and straightforward to release my changes,It's very difficult to release and takes a long time,,1,2
 2,culture,Culture,Low friction processes,Do you feel that the processes are suitable for you to deliver software cotinuously,"The whole thing is a well oiled machine, everybody is in their groove and we barely feel any friction. The processes help us to do the right thing","The processes are painful, too numerous and makes us cry",,1,1
-3,culture,Culture,Psychological Safety,How safe do you feel to raise concerns,Our concerns are valued and used to help improve the team and org,If we riase concerns we are ignored or could get in trouble,,1,1
+3,culture,Culture,Psychological Safety,How safe do you feel to raise concerns,Our concerns are valued and used to help improve the team and org,If we raise concerns we are ignored or could get in trouble,,1,1
 4,culture,Culture,Teams around us,How well do the teams around you work with you and your team?,"Teams around us are very friendly and helpful, it's a joy to work with the other teams",Teams around us are unhelpful and rude,,1,1
 5,culture,Culture,Management style,How effective and appropriate are the approaches by management and other senior stakeholders,The management approaches help us to deliver rapidly and safely,The management approach really hamper our efforts,,,1
 6,culture,Culture,Value,Do you work on valuable things as a team?,We live and breathe a value-driven team approach,We are disconnected from customer or user value,,1,1
