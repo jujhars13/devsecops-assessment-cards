@@ -260,7 +260,7 @@
     "high_score": "We test logging using tests that search for specific log message strings in the central log aggregation/search system",
     "low_score": "We do not test if logging is working",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
