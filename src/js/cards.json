@@ -308,7 +308,7 @@
     "high_score": "The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis",
     "low_score": "CI/CD takes so long to do or is very fragile and we end up losing whole chunks of our day to it.",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
