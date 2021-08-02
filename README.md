@@ -36,10 +36,10 @@ NODE_ENV=production node_modules/.bin/webpack build
 # now git commit and push to main
 ```
 
-## The Data
+## The dataset as CSV to JSON
 
 We find working with CSVs the most straightforward, using Excel or Libre Office Calc.
-You can then produce the other formats we need (`jsonl` -> `json`) using Python [`csvkit`](https://csvkit.readthedocs.io/en/latest/tutorial.html) and [`jq`](https://stedolan.github.io/jq/):
+You can then produce the other formats we need (`jsonl` -> `json`) using Python [`csvkit`](https://csvkit.readthedocs.io/en/latest/tutorial.html) and then [`jq`](https://stedolan.github.io/jq/) to split out a mapped json array that's easier to digest by our client-side js:
 
 ```bash
 # use Python csvjson from csvkit to convert our csv file to a jsonl then to a json file
@@ -52,5 +52,7 @@ inotifywait -me modify data.csv $(csvjson data.csv | jq -c '.[]' | jq -s '.' > s
 ```
 
 ## Licence
+
+Fill your boots
 
 [MIT](LICENSE)
