@@ -660,7 +660,7 @@
     "seq": 1
   },
   {
-    "id": 19,
+    "id": 15,
     "slug": "culture",
     "category": "Culture",
     "title": "Our tools are cool",
@@ -788,7 +788,7 @@
     "high_score": "We use auto-renewal of certificates combined with certificate monitoring so we can take remedial action ahead of time",
     "low_score": "We do not know when our certificates are going to expire",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
