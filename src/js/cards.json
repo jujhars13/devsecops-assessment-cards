@@ -196,7 +196,7 @@
     "slug": "dev-practices",
     "category": "Dev Practices",
     "title": "12 Factor Apps",
-    "description": "The rugged manifesto is a sensible set of established practices to make our software more portable",
+    "description": "The 12 factor apps patterns are set of established practices to make our software more portable",
     "high_score": "We do our best to follow this manifesto",
     "low_score": "Never heard of it before",
     "more_info_link": "https://12factor.net/",
