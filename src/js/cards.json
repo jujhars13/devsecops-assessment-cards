@@ -56,7 +56,7 @@
     "high_score": "If the pipeline fails it is clear which team is responsible so we stop our work immediately and fix the problem",
     "low_score": "The pipeline fails so often it is difficult to know which team broke the build",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -99,11 +99,11 @@
     "id": 9,
     "slug": "dev-practices",
     "category": "Dev Practices",
-    "title": "Semantic Versioning ",
+    "title": "Semantic Versioning",
     "description": "How strict are you with your approach to semantic versioning",
-    "high_score": "We use semantic versioning to communicate the meaning of changes.  We strive to make no breaking changes at all.  We use the tolerant reader pattern.  We peg the major.minor release version of our dependencies",
+    "high_score": "We use semantic versioning to communicate the meaning of changes, we strive to make no breaking changes at all.  We use the tolerant reader pattern for our api consumption.  We peg the major.minor release version of our dependencies",
     "low_score": "We just use the latest versions of each component or package and just increment our own version numbers",
-    "more_info_link": null,
+    "more_info_link": "https://semver.org/",
     "important": true,
     "seq": 1
   },
@@ -197,8 +197,8 @@
     "category": "Dev Practices",
     "title": "12 Factor Apps",
     "description": "The 12 factor apps patterns are set of established practices to make our software more portable",
-    "high_score": "We do our best to follow this manifesto",
-    "low_score": "Never heard of it before",
+    "high_score": "We follow all or nearly all practices in this manifesto",
+    "low_score": "Never heard of it before or it's points",
     "more_info_link": "https://12factor.net/",
     "important": true,
     "seq": 1
@@ -306,7 +306,7 @@
     "title": "CI/CD Speed and Stability",
     "description": "CI/CD processes are fast and stable",
     "high_score": "The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis",
-    "low_score": "CI/CD takes so long to do or is very fragile and we end up losing whole chunks of our day to it.",
+    "low_score": "CI/CD takes so long to do or is very fragile and we end up losing big chunks of our day to it.",
     "more_info_link": null,
     "important": true,
     "seq": 1
@@ -438,7 +438,7 @@
     "title": "MTTR",
     "description": "How long does it take you to restore service in the case of an incident",
     "high_score": "We track our MTTR across the board and can restore in <10 mins on average",
-    "low_score": "We do not track this properly",
+    "low_score": "We measure repair in days and we do not track this properly",
     "more_info_link": "https://en.wikipedia.org/wiki/Mean_time_to_repair",
     "important": true,
     "seq": 1
