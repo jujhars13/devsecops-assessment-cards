@@ -187,7 +187,7 @@
     "description": "The rugged manifesto is a sensible set of practices to make our software more rugged",
     "high_score": "We do our best to follow this manifesto",
     "low_score": "Never heard of it before",
-    "more_info_link": "https://ruggedsoftware.org/",
+    "more_info_link": "https://ruggedsoftware.org",
     "important": null,
     "seq": 1
   },
@@ -200,6 +200,18 @@
     "high_score": "We follow all or nearly all practices in this manifesto",
     "low_score": "Never heard of it before or it's points",
     "more_info_link": "https://12factor.net/",
+    "important": true,
+    "seq": 1
+  },
+  {
+    "id": 18,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Documentation",
+    "description": "How good are your docs? How trusted are they?",
+    "high_score": "Our docs are updated regularly and are accurate",
+    "low_score": "Documentation is poor, out of date or non-existant",
+    "more_info_link": null,
     "important": true,
     "seq": 1
   },
