@@ -17,7 +17,6 @@ body {
 }
 
 .question-card {
-
   border: 1px solid;
   border-radius: 10px;
   position: relative;
@@ -48,7 +47,7 @@ body {
 .card-front.availability {
   background: rgb(255 147 231);
 }
-.card-front.tech{
+.card-front.tech {
   background: rgb(11 170 82);
 }
 .card-front.dev-practices {
@@ -67,10 +66,10 @@ body {
 /** show a star on important cards **/
 span.card-important {
   position: absolute;
-  top:2%;
-  right:3%;
+  top: 2%;
+  right: 3%;
   font-size: 1rem;
-  color:yellow;
+  color: yellow;
   text-shadow: 1px 2px grey;
 }
 
@@ -130,15 +129,25 @@ span.card-important {
   background-color: #bf5757;
 }
 
-footer.card-footer  {
+footer.card-footer {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   width: 100%;
   opacity: 60%;
-  color:white;
+  color: white;
   background-color: rgb(124, 116, 116);
 }
 
+#rectangle {
+  width: 40px;
+  height: 40px;
+  background: blue;
+  cursor: pointer;
+}
+
+#rectangle:hover {
+  background: yellow;
+}
 
 #debug {
   font-size: large;

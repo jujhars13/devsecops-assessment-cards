@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jujhars13/security-frameworks#readme",
   "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "ky": "^0.31.0",
     "mustache": "^4.2.0"
   },
   "devDependencies": {

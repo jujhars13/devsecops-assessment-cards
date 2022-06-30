@@ -1,8 +1,26 @@
-const Mustache = require("mustache");
-import data from "./js/cardModel.js";
+import EventEmitter from "eventemitter3";
+import ky from "ky";
+import Mustache from "mustache";
+import cardData from "./js/cardModel.js";
+
+const EE = new EventEmitter();
+function updateState() {
+  return ky.get("http://localhost:8081/data/b1234b").json();
+}
+
+let state = updateState();
+
+async function emitted() {
+  state = await updateState();
+  console.log(state); // true
+}
+
+EE.on("score-updated", emitted, state);
+
+//EE.removeListener("another-event", emitted, state);
 
 const cardContainer = document.getElementById("card-container");
-//document.getElementById("debug").innerHTML = JSON.stringify(data, null, 2);
+// document.getElementById("debug").innerHTML = JSON.stringify(data, null, 2);
 
 const cardTemplate = Mustache.render(
   `
@@ -21,6 +39,12 @@ const cardTemplate = Mustache.render(
       <h2>{{title}}</h2>
       <p>{{description}}</p>
       <footer class="card-footer">{{categoryName}}</footer>
+      <div>
+      <div id="rectangle" data-score="1">1</div>
+      <div id="rectangle" data-score="2">2</div>
+      <div id="rectangle" data-score="3">3</div>
+      <div id="rectangle" data-score="4">4</div>
+      </div>
     </div>
     <div class="card-back">
       <div class="card-number">{{id}}</div>
@@ -45,15 +69,16 @@ const cardTemplate = Mustache.render(
 {{/cards}}
 {{/data}}
 `,
-  { data }
+  { data: cardData }
 );
 
 cardContainer.innerHTML = cardTemplate;
 
-// add flip animation to cards
-const cards = document.getElementsByClassName("question-card");
+// add flip animation to cards, on number click
+const cards = document.getElementsByClassName("card-number");
 Object.values(cards).forEach((el) => {
   el.addEventListener("click", () => {
-    el.classList.toggle("flipCard");
+    el.parentElement.parentElement.classList.toggle("flipCard");
+    EE.emit("score-updated");
   });
 });
