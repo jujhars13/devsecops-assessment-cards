@@ -6,8 +6,7 @@ import Mustache from "mustache";
  * @returns string <the rendered HTML template>
  */
 function renderUserView(cardData) {
-  return Mustache.render(
-    `
+  return Mustache.render(`
 {{#data}}
 <div class="category-name" data-category="{{slug}}">
   <h1>{{{categoryName}}}</h1>
@@ -52,14 +51,16 @@ function renderUserView(cardData) {
 </div>
 {{/cards}}
 {{/data}}
-`,
-    { data: cardData }
-  );
+`, {data: cardData});
 }
 
+/**
+ * This renders Facilitator view
+ * @param cardData
+ * @returns {*}
+ */
 function renderFacilitatorView(cardData) {
-  return Mustache.render(
-    `
+  return Mustache.render(`
 {{#data}}
 <div class="category-name" data-category="{{slug}}">
   <h1>{{{categoryName}}}</h1>
@@ -75,11 +76,35 @@ function renderFacilitatorView(cardData) {
       <h2>FACILITATOR:{{title}}</h2>
       <p>{{description}}</p>
       <footer class="card-footer">{{categoryName}}</footer>
+      <div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
       <div>
+        <div class="col">
+          <div class="row" id="rectangle" data-score="1">1</div>
+          <div id="rectangle" data-score="2">2</div>
+          <div id="rectangle" data-score="3">3</div>
+          <div id="rectangle" data-score="4">4</div>
+        </div>
         <div id="rectangle" data-score="1">1</div>
-        <div id="rectangle" class="chosen" data-score="2">2</div>
-        <div id="rectangle" data-score="3">3</div>
-        <div id="rectangle" data-score="4">4</div>
       </div>
 
     </div>
@@ -105,9 +130,7 @@ function renderFacilitatorView(cardData) {
 </div>
 {{/cards}}
 {{/data}}
-`,
-    { data: cardData }
-  );
+`, {data: cardData});
 }
 
-export { renderUserView,renderFacilitatorView };
+export {renderUserView, renderFacilitatorView};

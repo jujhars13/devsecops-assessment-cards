@@ -3,6 +3,7 @@ import ky from "ky";
 import cardData from "./js/cardModel.js";
 import { renderUserView, renderFacilitatorView } from "./js/cardRender.js";
 
+const facilitator = true;
 const playerName = "playerThree";
 
 // const EE = new EventEmitter();
@@ -21,25 +22,29 @@ let responseState = await getServerState();
 // EE.on("score-updated", emitted, state);
 // //EE.removeListener("another-event", emitted, state);
 
-
+if (facilitator){
+// render the cards
+  const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML = renderFacilitatorView(cardData);
+}else {
 // hydrate the card data with the question response state from the server
 // so we can highlight chosen cards by this user
-const hydratedCardData = cardData.map((el) => {
-  el.cards.forEach((card, key) => {
-    let cardServerResponse= responseState.questions.find(response => {
-      return response.id === card.id;
+  const hydratedCardData = cardData.map((el) => {
+    el.cards.forEach((card, arrPosition) => {
+      let cardServerResponse = responseState.questions.find(responseCard => {
+        return responseCard.id === card.id;
+      });
+      if (cardServerResponse) {
+        el.cards[arrPosition][`response${cardServerResponse.responses[playerName]}`] = true;
+      }
     });
-    if (cardServerResponse) {
-      el.cards[key][`response${cardServerResponse.responses[playerName]}`] = true;
-    }
+    return el;
   });
-  return el;
-});
 
 // render the cards
-const cardContainer = document.getElementById("card-container");
-cardContainer.innerHTML = renderUserView(hydratedCardData);
-
+  const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML = renderUserView(hydratedCardData);
+}
 // add flip animation to cards, on number click
 const cards = document.getElementsByClassName("card-number");
 Object.values(cards).forEach((el) => {

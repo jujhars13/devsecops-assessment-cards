@@ -27,6 +27,7 @@ const requestHandler = (request, response) => {
     response.setHeader("Access-Control-Allow-Origin", "*");
     response.statusCode = 200;
     response.end(JSON.stringify(sampleData));
+    return true;
   }
 
   // "log" server access to stdout
