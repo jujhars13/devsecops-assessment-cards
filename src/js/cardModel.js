@@ -8,7 +8,7 @@
 //   categoryName: <name>
 //   cards:[<card_data>,card_data>]
 // }]
-import raw from "./cards.json";
+import raw from "./cards2.json";
 
 // get all categories first then add data to them
 // we want the data objects by returned by category
