@@ -1,0 +1,11 @@
+{
+  "sessionId": "a89839123",
+  "dateTime": "2022-07-01-10:22:22GMT",
+  "question": {
+      "id": 1,
+      "text": "do you like computers",
+      "response": {
+        "playerOne": 1
+      }
+    }
+}

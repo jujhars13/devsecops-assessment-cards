@@ -1,0 +1,27 @@
+{
+  "sessionId": "a89839123",
+  "dateTime": "2022-07-01-10:22:22GMT",
+  "questions": [
+    {
+      "id": 1,
+      "text": "do you like computers",
+      "responses": {
+        "playerOne": 1,
+        "playerTwo": 3,
+        "playerThree": 2,
+        "playerFour": 3,
+        "playerFive": 3
+      }
+    },
+    {
+      "id": 2,
+      "text": "are you good at iphones",
+      "responses": {
+        "playerOne": 4,
+        "playerTwo": 4,
+        "playerThree": 4,
+        "playerFour": 3
+      }
+    }
+  ]
+}

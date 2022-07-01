@@ -40,11 +40,12 @@ const cardTemplate = Mustache.render(
       <p>{{description}}</p>
       <footer class="card-footer">{{categoryName}}</footer>
       <div>
-      <div id="rectangle" data-score="1">1</div>
-      <div id="rectangle" data-score="2">2</div>
-      <div id="rectangle" data-score="3">3</div>
-      <div id="rectangle" data-score="4">4</div>
+        <div id="rectangle" data-score="1">1</div>
+        <div id="rectangle" data-score="2">2</div>
+        <div id="rectangle" data-score="3">3</div>
+        <div id="rectangle" data-score="4">4</div>
       </div>
+      
     </div>
     <div class="card-back">
       <div class="card-number">{{id}}</div>

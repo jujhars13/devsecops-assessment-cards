@@ -25,7 +25,6 @@ const requestHandler = (request, response) => {
       data: "this is our data page",
       pageId,
       responses: {
-        
       }
     };
     out.status = 200;
