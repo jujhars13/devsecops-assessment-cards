@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  experiments: {
+    topLevelAwait:true
+  },
+  target: ["web", "es5"],
   entry: "./src/index.js",
   mode: process.env?.NODE_ENV ? process.env?.NODE_ENV : "development",
   output: {

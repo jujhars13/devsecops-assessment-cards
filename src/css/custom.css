@@ -138,14 +138,14 @@ footer.card-footer {
   background-color: rgb(124, 116, 116);
 }
 
-#rectangle {
+.rectangle {
   width: 40px;
   height: 40px;
   background: blue;
   cursor: pointer;
 }
 
-#rectangle:hover {
+.rectangle:hover, .rectangle.chosen {
   background: yellow;
 }
 

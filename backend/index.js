@@ -3,6 +3,8 @@
  * Nodejs > 14
  */
 const http = require("http");
+const sampleData = require("./serverDataObject.json");
+
 const {
   port = process.env?.NODE_PORT || 8080,
   yourName = "Wayne",
@@ -18,16 +20,13 @@ const requestHandler = (request, response) => {
     out.status = 200;
   }
 
-  // route:data
-  if (request.url.match(/\/data\/.{6}/) && request.method === "GET") {
-    const pageId = request.url.split("/")[2];
-    out.payload = {
-      data: "this is our data page",
-      pageId,
-      responses: {
-      }
-    };
-    out.status = 200;
+  // route: return data to client
+  if (request.url.match(/\/data\/.{9}/) && request.method === "GET") {
+    const sessionId = request.url.split("/")[2];
+    response.setHeader("Content-Type", "application/json");
+    response.setHeader("Access-Control-Allow-Origin", "*");
+    response.statusCode = 200;
+    response.end(JSON.stringify(sampleData));
   }
 
   // "log" server access to stdout
