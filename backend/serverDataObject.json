@@ -9,7 +9,7 @@
         "playerOne": 1,
         "playerTwo": 3,
         "playerThree": 2,
-        "playerFour": 3,
+        "playerFour": 4,
         "playerFive": 3
       }
     },
@@ -20,7 +20,7 @@
         "playerOne": 4,
         "playerTwo": 4,
         "playerThree": 4,
-        "playerFour": 3
+        "playerFour": 2
       }
     }
   ]

@@ -3,12 +3,14 @@ import ky from "ky";
 import cardData from "./js/cardModel.js";
 import { renderUserView, renderFacilitatorView } from "./js/cardRender.js";
 
-const EE = new EventEmitter();
+const playerName = "playerThree";
+
+// const EE = new EventEmitter();
 function getServerState() {
   return ky.get("http://localhost:8081/data/a89839123").json();
 }
 
-let state = await getServerState();
+let responseState = await getServerState();
 
 //console.log({ cardData, state });
 // async function emitted() {
@@ -19,19 +21,30 @@ let state = await getServerState();
 // EE.on("score-updated", emitted, state);
 // //EE.removeListener("another-event", emitted, state);
 
-// hydrate the card data with the answer state from the server
+
+// hydrate the card data with the question response state from the server
 // so we can highlight chosen cards by this user
-const hydratedCardData = cardData.map(el => { console.log(el) });
+const hydratedCardData = cardData.map((el) => {
+  el.cards.forEach((card, key) => {
+    let cardServerResponse= responseState.questions.find(response => {
+      return response.id === card.id;
+    });
+    if (cardServerResponse) {
+      el.cards[key][`response${cardServerResponse.responses[playerName]}`] = true;
+    }
+  });
+  return el;
+});
 
 // render the cards
 const cardContainer = document.getElementById("card-container");
-cardContainer.innerHTML = renderUserView(cardData);
+cardContainer.innerHTML = renderUserView(hydratedCardData);
 
 // add flip animation to cards, on number click
 const cards = document.getElementsByClassName("card-number");
 Object.values(cards).forEach((el) => {
   el.addEventListener("click", () => {
     el.parentElement.parentElement.classList.toggle("flipCard");
-   // EE.emit("score-updated");
+    // EE.emit("score-updated");
   });
 });
