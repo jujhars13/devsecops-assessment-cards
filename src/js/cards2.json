@@ -47,7 +47,7 @@
     "category": "Dev Practices",
     "title": "Security by design",
     "description": "Security by design",
-    "high_score": "We run regulalr agile threat modelling sessions\nWe include Evil User stories",
+    "high_score": "We run regular agile threat modelling sessions\nWe include Evil User stories",
     "low_score": "We have no idea what you're talking about",
     "more_info_link": "[\"https://thoughtworksinc.github.io/sensible-security-conversations/\"]",
     "what_this_tells_us": "- The right investment is made upfront\n- Vulns don't make it to production\n- High confidence in software\n- Compliance",
