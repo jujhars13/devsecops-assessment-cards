@@ -81,7 +81,7 @@ span.card-important {
   border-radius: 10px;
   text-align: center;
   backface-visibility: hidden;
-  background: rgb(217 217 217);
+  background: #15EBE1;
   color: rgb(19, 19, 19);
   transform: rotateY(180deg);
 }
