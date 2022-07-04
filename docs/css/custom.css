@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(104 131 180);
+  background-color: #00539F;
 }
 
 .category-name h1 {
@@ -52,7 +52,7 @@ body {
   background: rgb(11 170 82);
 }
 .card-front.dev-practices {
-  background: plum;
+  background: #d2cacb;
 }
 .card-front.deployments {
   background: #f2b3bf;
@@ -147,4 +147,8 @@ footer.card-footer  {
 
 .scroll {
   overflow-y: auto;
+}
+
+.bg-dark {
+  background-color: #b60515 !important;
 }
