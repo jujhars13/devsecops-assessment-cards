@@ -39,4 +39,7 @@ tags
 .history
 .ionide
 
+# jetbrains
+.idea
+
 # End of https://www.toptal.com/developers/gitignore/api/vim,visualstudiocode
