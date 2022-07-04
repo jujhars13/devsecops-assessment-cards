@@ -13,6 +13,7 @@ const cardTemplate = Mustache.render(
 {{#cards}}
 <div class="main-card-container col-md-6 col-lg-3 mb-2">
   <div class="question-card">
+
     <div class="card-front {{slug}}">
       <div class="card-number">{{id}}</div>
       {{#important}}
@@ -22,7 +23,7 @@ const cardTemplate = Mustache.render(
       <p>{{description}}</p>
       <footer class="card-footer">{{categoryName}}</footer>
     </div>
-    <div class="card-back">
+    <div class="card-back scroll">
       <div class="card-number">{{id}}</div>
       {{#important}}
       <span class="card-important"><i class="fas fa-star"></i></span>
