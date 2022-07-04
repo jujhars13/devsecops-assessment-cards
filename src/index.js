@@ -51,9 +51,9 @@ const cardTemplate = Mustache.render(
 cardContainer.innerHTML = cardTemplate;
 
 // add flip animation to cards
-const cards = document.getElementsByClassName("question-card");
+const cards = document.getElementsByClassName("card-number");
 Object.values(cards).forEach((el) => {
   el.addEventListener("click", () => {
-    el.classList.toggle("flipCard");
+    el.parentElement.parentElement.classList.toggle("flipCard");
   });
 });

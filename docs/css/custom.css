@@ -98,6 +98,7 @@ span.card-important {
   text-align: center;
   font-size: 2.3rem;
   justify-content: center;
+  cursor: pointer;
 }
 
 .card-front h2,
