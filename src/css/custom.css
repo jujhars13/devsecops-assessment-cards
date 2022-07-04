@@ -144,3 +144,7 @@ footer.card-footer  {
 #debug {
   font-size: large;
 }
+
+.scroll {
+  overflow-y: auto;
+}
