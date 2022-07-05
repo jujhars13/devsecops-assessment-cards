@@ -1,78 +1,153 @@
-id,slug,category,title,description,high_score,low_score,more_info_link,important,seq
-1,dev-practices,Dev Practices,Config deployment,How easy is to deploy/inject a configuration change,We can run the majority of config changes independently of our code release.  All changes are auditable and revertable,We have to manual changes,,,1
-2,dev-practices,Dev Practices,Feature Coverage,What proportion of the features are covered by a test,Every one of our features has at least one test,Less than 25% of our features have corresponding tests,,1,1
-3,dev-practices,Dev Practices,Unplanned Work,How much unplanned work do you have and how do you handle it,We have very little unplanned work and have spare capacity to handle any that comes in,More than half our work in any given sprint is unplanned,,1,1
-4,dev-practices,Dev Practices,Broken Builds,Don't check In on broken build except to fix the broken build,We guard the build with care and never check-in on a broken build,We cannot easily know when a team has broken our build,,1,1
-5,dev-practices,Dev Practices,Stop the Line,If any part of the pipeline fails everyone stops feature work and fixes the problem,If the pipeline fails it is clear which team is responsible so we stop our work immediately and fix the problem,The pipeline fails so often it is difficult to know which team broke the build,,,1
-6,dev-practices,Dev Practices,Spend on Operability,What proportion of product budget and team effort is spent on operational aspects? How do you track this?,We spend our 30% of our time and budget on addressing operational aspects?,We try to spend as little as possible on operational aspects / we do not track spend on operational aspects?,,,1
-7,dev-practices,Dev Practices,Testability,How do we show that the software system is easy to test? What do we provide and to whom?,We run clients and external test packs against all parts of our software within our development pipeline.,We do not explicitly aim to make our software easily testable.,,,1
-8,dev-practices,Dev Practices,Sensitive Data,How do we ensure that sensitive data in logs is masked or hidden?,We test data masking using feature tests that search for log messages after application behaviour is executed,We do not test for sensitive data in logs,,,1
-9,dev-practices,Dev Practices,Semantic Versioning,How strict are you with your approach to semantic versioning,"We use semantic versioning to communicate the meaning of changes, we strive to make no breaking changes at all.  We use the tolerant reader pattern for our api consumption.  We peg the major.minor release version of our dependencies",We just use the latest versions of each component or package and just increment our own version numbers,https://semver.org/,1,1
-10,dev-practices,Dev Practices,Other Code,How confident are you in the code from other internal teams that you depend on,"We are confident in our colleagues code, their docs are clear and coverage is rock solid",Code from other teams is really flakey and we have to reach out often to try and understand their interfaces,,1,1
-11,dev-practices,Dev Practices,Test First,What proportion of the time you spend on writing code is spent on writing tests,We use a test first approach all the time and spend ~80% of our coding time writing our tests,We often do not have time to write tests,,1,1
-12,dev-practices,Dev Practices,Unit test coverage,What is your current code coverage level?,It’s about 80% or greater,Our unit test coverage is ~10% or lower,,,1
-13,dev-practices,Dev Practices,Test Data,How do you get your test data?,All our test data is generated from scripts and injected into the data stores,We have manual processes for setting up test data for environments,,,1
-14,dev-practices,Dev Practices,Deployment code,How is your deployment code structured?  Do you have tests for your deployment pipeline code,We have deployment verification tests for key parts of our build and automation suite.  The code is modular and well structured,"We do not test our build and deployment code, it’s just a handful of scritps",,,1
-15,dev-practices,Dev Practices,Testability,How easy is it to test your code?,We use dependency injection extensivly and can easily stub out our dependencies in order to test the code,Our code is tightly coupled and makes it hard to test,,1,1
-16,dev-practices,Dev Practices,Rugged Manifesto,The rugged manifesto is a sensible set of practices to make our software more rugged,We do our best to follow this manifesto,Never heard of it before,https://ruggedsoftware.org,,1
-17,dev-practices,Dev Practices,12 Factor Apps,The 12 factor apps patterns are set of established practices to make our software more portable,We follow all or nearly all practices in this manifesto,Never heard of it before or it's points,https://12factor.net/,1,1
-18,dev-practices,Dev Practices,Documentation,"How good are your docs? How trusted are they?",Our docs are updated regularly and are accurate,"Documentation is poor, out of date or non-existant",,1,1
-,,,,,,,,,
-1,observability,Observability,Feature Toggles Observability,How do we know which feature toggles are active for a deployments?,We have a simple UI or API to see what's on in which environment,We track things manually on paper or in our heads,,,1
-2,observability,Observability,Full stack Observability,Do you have multiple views of the entire stack's telemetry?,We can see through the entire stack from the metal all the way up to the UI issues and performance,We can only see one or two layers and don't really tie them together to tell a story,https://devsecops.jujhar.com/observability-strategy/,1,1
-3,observability,Observability,Hardware insights,How much insight do we have into the behaviour of our infra/deployment fabric,"We can tell you the CPU, RAM, NetworkIO & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",We only have very rough measures of our hardware performance,,,1
-4,observability,Observability,Logging Working,How do we know that logging is working correctly?,We test logging using tests that search for specific log message strings in the central log aggregation/search system,We do not test if logging is working,,,1
-5,observability,Observability,System Health,How do we know that the system is healthy (or unhealthy)?,We query the software using a standard http healthcheck URL and synthetic transactions for key scenarios,We wait for checks made manually by another team to tell us if our software is healthy,,1,1
-6,observability,Observability,Service Status,How do we display the current service/system status to ops teams and business stakeholders,We build a dashboard in collaboration with the operations and business teams. UX is a key consideration,Operations teams tend to discover the status indicators themselves,,1,1
-,,,,,,,,,
-1,deployments,Deployments,CI/CD Speed and Stability,CI/CD processes are fast and stable,The CI/CD pipelines are super fast and we get feedback on our software on almost real-time basis,CI/CD takes so long to do or is very fragile and we end up losing big chunks of our day to it.,,1,1
-2,deployments,Deployments,Blue-Green,Any mechanism to test a new version alongside an existing version when necessary,"We use fine-grained blue-green deployment techniques, at the level of individual services",We do not use any blue-green deployment techniques,,,1
-3,deployments,Deployments,Idempotency - Redploying the app,What would happen if we decided to redeploy the application even though nothing has changed,No worries,"We don’t know what would happen, the deployments are flakey",,,1
-4,deployments,Deployments,Rerun tests,What would happen if we decided to rerun the test suite multiple times,No worries,"We don’t know what would happen, the test suite is flakey",,1,1
-5,deployments,Deployments,Fresh config,What would happen if we decided to delete the config and redeploy it,"No worries, the application would behave as it did before",It’s very likely the app would behave differently as there’s a lot of manual changes,,,1
-6,deployments,Deployments,Environment rebuild,What would happen if we blew away the infra and re-created,"No worries, everything would be back up quickly and same as before",It’s very likely the app would break as there’s a lot of manual clickops,,1,1
-7,deployments,Deployments,Release candidates,Every check-in leads to a potential release,Any checking can generate a safe build that might go to production without a furthur build,We have to have special release candidate builds before we can release,,,1
-8,deployments,Deployments,Automated config,Config should always be performed by an automated process using values from your configuration repository,All config is done using scripts,Many of our applications are configure manually each time,,,1
-9,deployments,Deployments,Environment History,It should be possible to clearly see a history and log of changes made to our environments,We have a nice dashboard of deployments and their impact,It is difficult to see the history of changes in an environment,,,1
-10,deployments,Deployments,DB Changes,Decouple application deployments from schema migrations,Our application or service is completely decoupled from the underlying db schemas,We must co-ordinate the releases of our applications with any data layer changes,,,1
-,,,,,,,,,
-1,availability,Availability,MTTR,How long does it take you to restore service in the case of an incident,We track our MTTR across the board and can restore in <10 mins on average,We measure repair in days and we do not track this properly,https://en.wikipedia.org/wiki/Mean_time_to_repair,1,1
-2,availability,Availability,Service KPIs,How do we track the main service/system Key Performance Indicators (KPIs)? What are the KPIs?,We use logging and/or time series metrics to emit service KPIs that are picked up by a dashboard,We do not have Service KPIs defined,,,1
-3,availability,Availability,Service Restoration,"How do we keep things up and running: Can you recover quickly from incidents a low MTTR? Can you detect incidents ahead of time? Can you failover to backup systems",We have fully adopted SRE practices across the board. We continuously monitor and improve on your numbers,Little to no availability practices,,,1
-4,availability,Availability,Observability,"How much observability do you have on your systems environments, inputs, outputs and behaviour. Do you have enough information on how your system runs to make improvements/solve problems?","Just the basics you get for free from Cloudwatch, an on-server agent, htop, task manager etc.",Max Instrumentation and SLO driven dashboards,,1,1
-5,availability,Availability,Run without you,"If all of your team took some time off, how long would your systems keep running without you?","Our prod env will run for weeks without interference and self-heal",Everything will fall on it's face within a day without our heroics,,1,1
-,,,,,,,,,
-1,culture,Culture,Path to production,How easy is it to release the software that you work to production,It's easy and straightforward to release my changes,It's very difficult to release and takes a long time,,1,2
-2,culture,Culture,Low friction processes,Do you feel that the processes are suitable for you to deliver software cotinuously,"The whole thing is a well oiled machine, everybody is in their groove and we barely feel any friction. The processes help us to do the right thing","The processes are painful, too numerous and makes us cry",,1,1
-3,culture,Culture,Psychological Safety,How safe do you feel to raise concerns,Our concerns are valued and used to help improve the team and org,If we raise concerns we are ignored or could get in trouble,,1,1
-4,culture,Culture,Teams around us,How well do the teams around you work with you and your team?,"Teams around us are very friendly and helpful, it's a joy to work with the other teams",Teams around us are unhelpful and rude,,1,1
-5,culture,Culture,Management style,How effective and appropriate are the approaches by management and other senior stakeholders,The management approaches help us to deliver rapidly and safely,The management approach really hamper our efforts,,,1
-6,culture,Culture,Value,Do you work on valuable things as a team?,We live and breathe a value-driven team approach,We are disconnected from customer or user value,,1,1
-7,culture,Culture,Mission,How well do you know why you are working on things?,We have a clear mission that we are with all stakeholders,It is rarely clear what our mission is,,1,1
-8,culture,Culture,Speed,How rapidly do you work as a team?,We deliver work rapidly together,We seem to take a long time to get things done,,,1
-9,culture,Culture,Fun,How fun is it to work in your team? How much camaraderie and sense of teamwork?,The team is a fun place to be every day,Fun is rarely an aspect of our team work,,1,1
-10,culture,Culture,Learning,How much do you learn as a team?,We learn something every day,We rarely learn something new,,1,1
-11,culture,Culture,Support,How much support do you get as a team?,We are well-supported as a team,We get very little support as a team,,,1
-12,culture,Culture,Pawns or players,How much control do you have our what you work on and how?,We have strong influence over what we work on,We have very little say in what we work on,,1,1
-13,culture,Culture,Done,Done means released into production and not causing problems,Done means that the changes are deployed to prod with monitoring to ensure it has not broken anything,Our definition of done is a bit wishy-washy and means “feature tests have passed”,,,1
-14,culture,Culture,Collaboration,"How do we collaborate on operations aspects of the systems such as logging, monitoring, alerting and NFRs",We collaboratee on operational aspects from the very first week of the project,We respond after go-live wheen the tickets are raised by the live ops and service teams,,,1
-15,culture,Culture,Our tools are cool,"Do you feel that your tools, hardware and software are up to scratch",We love our tools and can solve any problem with them,"My machine is so slow and crashes all the time, to install any software I have to submit a ticket",,1,1
-,,,,,,,,,
-1,tech,Tech,Tech quality,How healthy is the code base?,"Our code base is clean, safe to use and well-tested",Our code base is piled with workarounds and danger areas,,1,1
-2,tech,Tech,Delivery Platform,How effective and easy to use is the delivery platform underpinning your team's delivery?,The platform is a force multiplier and helps us deliver rapidly and safely. We love the platform.,The platform seems to obstruct us and is difficult to use,,,1
-3,tech,Tech,API Replay,Record interactions against a service or API,We record key requests and responses from remote APIS which we use to build high-fidelity integratioon tests,We have no way to record requests or responses from a remote API,,,1
-4,tech,Tech,Binaries,Only Build Your Binaries Once. No special 'release candidate' builds,We have only a single build to reproduce a binary artifact which then gets promoted through all the environments with no additional merging or building needed,We have multiple different builds and then merge to create the final release candidate,,,1
-5,tech,Tech,Stubs,Simulate external systems. Treat almost every other system as 'external',The stubs we consume and write are good quality and give us a degree of confidence that our tests are working well.,There are few stubs available and we do noot have enough time to write stubs ourselves.,,,1
-6,tech,Tech,Call Tracing,How do we trace a call/request end-to-end through the system?,We use a standard tracing library to trace calls through the system. Tracing fields are maintained across component boundaries,We do not trace calls through the system and have to piece the info together by hand,,1,1
-7,tech,Tech,Performance,How do we know that the system/service performs within acceptable ranges?,We run a set of indicative performances tests within our deployment pipeline that are run on every check-in to version control.,We rely solely on the performance team to validate the performance of our application or service.,,1,1
-8,tech,Tech,Failure Modes,How can we see and share the different known failure modes (failure scenarios) for the system?,We use a set of error identifiers to define the failure modes in our software and we use these identifiers in our log messages,We do not relaly know how the system might fail,,1,1
-9,tech,Tech,TLS Certificates,How do we know when an SSL/TLS certificate is close to expiry?,We use auto-renewal of certificates combined with certificate monitoring so we can take remedial action ahead of time,We do not know when our certificates are going to expire,,,1
-,,,,,,,,,
-1,flow,Flow,Branch Age,We develop directly on master/trunk and any feature branches last no more than 2 days,We developo directly no master/trunk and any feature branches last no more than 2 days,Our feature branches last for many sprints,,,1
-2,flow,Flow,Retrospectives,How effective are your team retrospectives,"Our retrospectives are really energising,  valuable and effective for the team and we look forward to them",We do not have regular retrospectives,,1,1
-3,flow,Flow,Onboarding,How effective is the onboarding process for new teams and new staff,"The onboarding process is very simple, straightforward and clear",The onboarding process is incredibly difficult and really hampers process,,1,1
-4,flow,Flow,Work in Progress,"How many things does your team work on at the same time? (Minimum, Typical)",We have explicitly limited our WIP based on queing theory (or cost of Delay) and the WIP is equal or less than the number of people on the team,We have significantly more Work in Progress (WIP) items than team members,,1,1
-5,flow,Flow,Cycle Time,"How long does it take for a code change to go from version control to running in Production? (Minimum, Typical)",1 Hour or Less,2 Weeks or More,,1,1
-6,flow,Flow,Failed Changes,What proportion of changes to your application or service in Production fail or need remediation? (This is typically the number of failed deployments),Less than 5% of our changes / deployments fail in Production,More than 20% of our changes / deployments fail in Production,,1,1
-7,flow,Flow,Innovation and Improvements,How well are you able to innovate around delivery approaches?,We make our reserve time for innovation and process improvements every week and track changes as part of our team metrics,We do not have time to innovate,,,1
-8,flow,Flow,Deployment Frequency,How often does your team deploy to Production?,Every 2 days or less,Every 2 weeks or longer in practice,,1,1
+id,slug,category,title,description,high_score,low_score,more_info_link,what_this_tells_us,how_to_help,important,seq
+1,dev-practices,Dev Practices,Documentation,How good are your docs? How trusted are they? How easy are they to find?,"Our docs are updated regularly, accurate and easy to find","Documentation is poor, out of date or non-existant",https://www.atlassian.com/work-management/knowledge-sharing/documentation/importance-of-documentation,"- Self-sufficiency / reducing dependence on teams
+- Encourages knowledge sharing
+- Faster onboarding
+- Single source of truth for technical decisions, standards","- Planned documentation time as a team activity to update docs
+- Exemplar docs
+- Document-as-you-go",1,1
+2,dev-practices,Dev Practices,IaC,Do you follow Infrastructure as Code practices,We use versioned and tested IaC for all our deployments.  It is kept alongside the code or in a dedicated and well documented repo,Our deployments are manual,https://www.amazon.co.uk/Infrastructure-Code-Dynamic-Systems-Cloud,"- documentation of environments
+- repeatable processes
+- easier spin up of new environments
+- testability","- Exemplar projects
+- Templates
+- Training
+- IaC enabling teams",,1
+3,dev-practices,Dev Practices,Testability,How easy is it to provide confidence that the changes that are made are correct (technically and productly),We have multiple assurance steps of differing types run in multiple environments as part of our CI & CD processes,"We only have basic unit or ""integration tests"" in place",,"- Shift left, shorter feedback loops
+- insight into deployment frequency
+- code is structured well enough to test
+- Documents code (discovery)
+- high confidence and correctness and proof","- QA Strategy
+- CI/CD Enabling team
+- Test Automation enabling teams
+- Adding in technical debt tasks",1,1
+4,dev-practices,Dev Practices,Linting and Code Quality,How good are you code quality and PR standards.,"We have documented, automated and enforced code quality and linting standards.
+We have a PR template that should be followed otherwise your PRs are rejected.
+We have a structured git-branch standard that relates back to the ticket.
+Our have good discipline around our commit messages.","We don't have linting standards
+Our PR descriptions are poor or non-existent",,"- Team cares about quality
+- Team's code is consistent
+- Onboarding is quick
+- Cognitive load is reduced on PR comitters and approvers
+- There is an easily followed audit trail for changes","- Git training
+- Exemplar repos
+- CI/CD Enabling team
+- Template repos",1,
+5,dev-practices,Dev Practices,Security,Security by design and automated security testing,"We run regulalr agile threat modelling sessions
+We include Evil User stories. 
+We have several automated steps as part of our CI/CD (SAST, supply chain, DAST)",We have no idea what you're talking about,"[""https://thoughtworksinc.github.io/sensible-security-conversations/""]","- The right investment is made upfront
+- Vulns don't make it to production
+- Shift left, pick up risks early
+- Vulns don't make it to production
+- Swiss cheese testing model
+- High confidence in software
+- Compliance","- Security Strategy
+- Security Enabling team
+- Agile threat modelling workshops
+- Tabletop threat modelling workshops
+- SecureCodeWarrior training
+",,1
+6,dev-practices,Dev Practices,"Deployment 
+strategy",Do you have the ability to do A/B testing in production,"We use fine-grained blue-green deployment 
+techniques or other deployment strategy 
+at the level of individual services
+Automated rollbacks
+Incident response playbook","We do not use any deployment techniques
+Foggy understanding of environments
+Manual config","[""https://martinfowler.com/bliki/BlueGreenDeployment.html""]","- CI/CD maturity
+- Observability maturity
+- Product thinking - decisions are data driven and team looks for feedback loops
+- MTTR and Deployment Frequency","- Deployment strategy. e.g. Blue green, canary deployment etc
+- Observability strategy
+- Observability enablement
+",1,1
+7,dev-practices,Dev Practices,Sensible Defaults,Do you follow sensible defaults/golden path/tech radar,"We have/know about sensible defaults and we follow them as best we can
+We use technology off Tesco's golden-path/menu","We don't know about sensible defaults
+We often ignore the golden-path",,"- ""Not Invented Here"" syndrome
+- overall practices maturity
+- Poor awareness of best practice
+- Sensible defaults need reviewing
+- Golden-path needs reviewing
+","- Publish sensible defaults for infra
+- Publish sensible defaults for back-end
+- Publish sensible defaults for front-end
+- Publish sensible defaults for security
+- Promote golden-path for infra
+- Promote golden-path for back-end",,1
+8,dev-practices,Culture,Uh oh,What happens in case of failure/incident?,"We through the situation together.
+We discuss the issue in depth
+We work out the best way to prevent/mitigate in future","We discuss the issue but nothing changes
+The person/team could get in trouble or is blamed
+No investment is made in paying down tech debt","[ ""https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture"", ""https://blog.pragmaticengineer.com/postmortem-best-practices/"" ]","- Is there a Pathalogical/Bureaucratic/Generative culture
+- Tech debt stories not being prioritized
+- Absence of runbooks
+- Siloed teams","- Incident handling best practices
+- Blameless postmortem facilitation 
+- Obserability strategy
+- JIRA audit
+- Agile coaching
+- Clear ownership and accountability of resolution 
+- Runbooks for common issues",1,1
+9,dev-practices,Culture,Onboarding,How easy is it to onboard members to your team and make them productive,New team members can spin up a environment quickly and commit to production < 3 weeks,"It can take a few months before a team member can actively contribute
+
+It takes a long time to discover all the codebases and environments","[""https://github.com/TeamTopologies/Team-API-template""]",,"- Team api templates
+- ADRs and RFCs
+- Document readmes
+- Runbook enablement
+- Documentation enabling team
+- Documentation hackathon",1,1
+10,dev-practices,Culture,Purpose,Do you know why your team is doing what it's doing and how it contributes to the big picture? ,"Very clear what we're doing  
+We're close to the customer
+We see our impact quickly
+We respond quickly to customer feedback
+We can see the impact of our changes on our customers
+There is a clear strategy and vision for our product","We don't know how / where our code is being used 
+No idea who our customer is or what they want. We only take educated guesses
+We only rarely (if ever) see the impact of our changes
+We are told what to do. Not sure why",,"- Individual purpose
+- Team satisfaction
+- Clear vision and shared understanding of what is being done","- Product & Team vision
+- Tech vision
+- Product Strategies
+- Tech strategies
+- Product analytics",1,1
+11,dev-practices,Culture,Growth,"Have you grown in your profession since you joined Tesco?
+How easy is it to find clear and visible ways to help you progress in your discipline","I have given enough opportunity to explore different things
+I felt I have grown a lot since I joined tesco. 
+There is enough supports/forums to help me progress.
+I have been mentored many times by others. 
+There is a culture of giving feedback.","I don't get to do interesting tasks
+I don't see clear paths of progression
+I feel I am stuck",,"- How good are our feedback loops.
+- Are the challenges structured in a right way to grow our devs
+- Are there enough opportunities for our devs
+- Are there the right support structures in place ","- Create secondment opportunities and engineer rotation
+- Create mentoring framework
+- Establish and fund Communities of Practice
+- Establish and fund more hackathons",,1
+12,dev-practices,Flow,Git Branching,What is your Git branching strategy?,"We develop directly on main (trunk based) or any 
+feature branches last no more than 2 days",Our feature branches can last for many sprints,,"- how to break down work properly
+- the value of regular and small commits
+- how blocked/unblocked they are on most tasks
+- TDD practices (good TDD enables trunk based development) - QA strategy
+- directly related to release frequency","- QA Strategy
+- Git training
+- Exemplar repos
+- Dave Farley's videos
+ ",1,1
+13,dev-practices,Flow,Focus time,"How much time in a typical day do you get to be ""in the zone""?","About half a day
+I am encouraged to and get to set aside focus time everyday","I am in and out of meetings the entire day
+I am made to attend meetings that I don't need to be in
+I am bombarded with ad-hoc requests from other teams",,"- Focus time is short
+- Too much context switching
+- ""Work not Visible""
+- Too many meetings","- Incident handling best practices
+- Blameless postmortem facilitation
+- Obserability strategy
+- JIRA audit
+- Meeting audit
+- Agile coaching",1,1
+14,dev-practices,Observability,Observability,Observability is the process of watching what your systems do at every layer so that you can build a comprehensive picture of how it does what it does,We can see through the entire stack from the metal all the way up to UI issues and performance,We can only see one or two layers and don't really tie them together to tell a story,https://thenewstack.io/how-much-observability-is-enough/,"- Why, how, and where is a system broken?
+- Opportunities for data-driven optimisation
+- Measure improvements / detriments over time","- Observability strategy
+- Exemplar projects
+- Observability enablement",1,1
