@@ -39,9 +39,25 @@ function renderUserView(cardData) {
             <p class="card-points low-score">1 point</p>
             <p>{{low_score}}</p>
           </div>
-          {{#more_info_link}}
-          <p><a href="{{more_info_link}}" class="card-link">More Info</a></p>
-          {{/more_info_link}}
+          {{#moreCardInfo}}
+          <div>
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                {{title}}
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {{description}}
+                  {{#url}}<a href="{{url}}">{{url}}</a>{{/url}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          {{/moreCardInfo}}
         </div>
       </div>
     </div>

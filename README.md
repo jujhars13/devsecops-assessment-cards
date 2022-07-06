@@ -51,6 +51,13 @@ jq -s '.' /tmp/data.jsonl > src/js/cardData.json
 $(csvjson cardData.csv | jq -c '.[]' | jq -s '.' > src/js/cardData.json)
 ```
 
+## TODO
+
+- [ ] fix more-info accordian style
+- [ ] create CSV file for more-info data
+- [ ] update readme with instructions for generating more-info json
+- [ ] populate csv with more-info data
+
 ## Licence
 
 Fill your boots
