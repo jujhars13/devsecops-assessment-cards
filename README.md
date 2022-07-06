@@ -1,6 +1,6 @@
-# DevSecOps Capability Assessment Cards
+# Software Delivery Discussion Cards
 
-Temporarily published to [https://jujhars13.github.io/devsecops-assessment-cards/](https://jujhars13.github.io/devsecops-assessment-cards/)
+Temporarily published to [https://wayne-tw.github.io/engineering-capability-assessment-cards/](https://wayne-tw.github.io/engineering-capability-assessment-cards/)
 
 Cards used to assess the DevSecOps capability of a team.
 
@@ -44,14 +44,11 @@ You can then produce the other formats we need (`jsonl` -> `json`) using Python 
 ```bash
 # use Python csvjson from csvkit to convert our csv file to a jsonl then to a json file
 # pip3 install csvkit
-csvjson data.csv | jq -c '.[]' > /tmp/data.jsonl
-jq -s '.' /tmp/data.jsonl > src/js/cards.json
+csvjson cardData.csv | jq -c '.[]' > /tmp/data.jsonl
+jq -s '.' /tmp/data.jsonl > src/js/cardData.json
 
 # as one line
-$(csvjson data.csv | jq -c '.[]' | jq -s '.' > src/js/cards.json)
-
-# badass ninja compile on change using inotifywait
-inotifywait -me modify data.csv $(csvjson data.csv | jq -c '.[]' | jq -s '.' > src/js/cards.json)
+$(csvjson cardData.csv | jq -c '.[]' | jq -s '.' > src/js/cardData.json)
 ```
 
 ## Licence
