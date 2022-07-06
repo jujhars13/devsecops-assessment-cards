@@ -73,7 +73,7 @@ We often ignore the golden-path",,"- ""Not Invented Here"" syndrome
 - Publish sensible defaults for security
 - Promote golden-path for infra
 - Promote golden-path for back-end",,1
-8,dev-practices,Culture,Uh oh,What happens in case of failure/incident?,"We through the situation together.
+8,culture,Culture,Uh oh,What happens in case of failure/incident?,"We through the situation together.
 We discuss the issue in depth
 We work out the best way to prevent/mitigate in future","We discuss the issue but nothing changes
 The person/team could get in trouble or is blamed
@@ -87,7 +87,7 @@ No investment is made in paying down tech debt","[ ""https://cloud.google.com/ar
 - Agile coaching
 - Clear ownership and accountability of resolution 
 - Runbooks for common issues",1,1
-9,dev-practices,Culture,Onboarding,How easy is it to onboard members to your team and make them productive,New team members can spin up a environment quickly and commit to production < 3 weeks,"It can take a few months before a team member can actively contribute
+9,culture,Culture,Onboarding,How easy is it to onboard members to your team and make them productive,New team members can spin up a environment quickly and commit to production < 3 weeks,"It can take a few months before a team member can actively contribute
 
 It takes a long time to discover all the codebases and environments","[""https://github.com/TeamTopologies/Team-API-template""]",,"- Team api templates
 - ADRs and RFCs
@@ -95,7 +95,7 @@ It takes a long time to discover all the codebases and environments","[""https:/
 - Runbook enablement
 - Documentation enabling team
 - Documentation hackathon",1,1
-10,dev-practices,Culture,Purpose,Do you know why your team is doing what it's doing and how it contributes to the big picture? ,"Very clear what we're doing  
+10,culture,Culture,Purpose,Do you know why your team is doing what it's doing and how it contributes to the big picture? ,"Very clear what we're doing  
 We're close to the customer
 We see our impact quickly
 We respond quickly to customer feedback
@@ -110,7 +110,7 @@ We are told what to do. Not sure why",,"- Individual purpose
 - Product Strategies
 - Tech strategies
 - Product analytics",1,1
-11,dev-practices,Culture,Growth,"Have you grown in your profession since you joined Tesco?
+11,culture,Culture,Growth,"Have you grown in your profession since you joined Tesco?
 How easy is it to find clear and visible ways to help you progress in your discipline","I have given enough opportunity to explore different things
 I felt I have grown a lot since I joined tesco. 
 There is enough supports/forums to help me progress.
@@ -124,7 +124,7 @@ I feel I am stuck",,"- How good are our feedback loops.
 - Create mentoring framework
 - Establish and fund Communities of Practice
 - Establish and fund more hackathons",,1
-12,dev-practices,Flow,Git Branching,What is your Git branching strategy?,"We develop directly on main (trunk based) or any 
+12,flow,Flow,Git Branching,What is your Git branching strategy?,"We develop directly on main (trunk based) or any 
 feature branches last no more than 2 days",Our feature branches can last for many sprints,,"- how to break down work properly
 - the value of regular and small commits
 - how blocked/unblocked they are on most tasks
@@ -134,7 +134,7 @@ feature branches last no more than 2 days",Our feature branches can last for man
 - Exemplar repos
 - Dave Farley's videos
  ",1,1
-13,dev-practices,Flow,Focus time,"How much time in a typical day do you get to be ""in the zone""?","About half a day
+13,flow,Flow,Focus time,"How much time in a typical day do you get to be ""in the zone""?","About half a day
 I am encouraged to and get to set aside focus time everyday","I am in and out of meetings the entire day
 I am made to attend meetings that I don't need to be in
 I am bombarded with ad-hoc requests from other teams",,"- Focus time is short
@@ -146,7 +146,7 @@ I am bombarded with ad-hoc requests from other teams",,"- Focus time is short
 - JIRA audit
 - Meeting audit
 - Agile coaching",1,1
-14,dev-practices,Observability,Observability,Observability is the process of watching what your systems do at every layer so that you can build a comprehensive picture of how it does what it does,We can see through the entire stack from the metal all the way up to UI issues and performance,We can only see one or two layers and don't really tie them together to tell a story,https://thenewstack.io/how-much-observability-is-enough/,"- Why, how, and where is a system broken?
+14,observability,Observability,Observability,Observability is the process of watching what your systems do at every layer so that you can build a comprehensive picture of how it does what it does,We can see through the entire stack from the metal all the way up to UI issues and performance,We can only see one or two layers and don't really tie them together to tell a story,https://thenewstack.io/how-much-observability-is-enough/,"- Why, how, and where is a system broken?
 - Opportunities for data-driven optimisation
 - Measure improvements / detriments over time","- Observability strategy
 - Exemplar projects

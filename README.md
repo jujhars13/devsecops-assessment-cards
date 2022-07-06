@@ -47,6 +47,9 @@ You can then produce the other formats we need (`jsonl` -> `json`) using Python 
 csvjson data.csv | jq -c '.[]' > /tmp/data.jsonl
 jq -s '.' /tmp/data.jsonl > src/js/cards.json
 
+# as one line
+$(csvjson data.csv | jq -c '.[]' | jq -s '.' > src/js/cards.json)
+
 # badass ninja compile on change using inotifywait
 inotifywait -me modify data.csv $(csvjson data.csv | jq -c '.[]' | jq -s '.' > src/js/cards.json)
 ```

@@ -99,7 +99,7 @@
   },
   {
     "id": 8,
-    "slug": "dev-practices",
+    "slug": "culture",
     "category": "Culture",
     "title": "Uh oh",
     "description": "What happens in case of failure/incident?",
@@ -113,7 +113,7 @@
   },
   {
     "id": 9,
-    "slug": "dev-practices",
+    "slug": "culture",
     "category": "Culture",
     "title": "Onboarding",
     "description": "How easy is it to onboard members to your team and make them productive",
@@ -127,7 +127,7 @@
   },
   {
     "id": 10,
-    "slug": "dev-practices",
+    "slug": "culture",
     "category": "Culture",
     "title": "Purpose",
     "description": "Do you know why your team is doing what it's doing and how it contributes to the big picture? ",
@@ -141,7 +141,7 @@
   },
   {
     "id": 11,
-    "slug": "dev-practices",
+    "slug": "culture",
     "category": "Culture",
     "title": "Growth",
     "description": "Have you grown in your profession since you joined Tesco?\nHow easy is it to find clear and visible ways to help you progress in your discipline",
@@ -155,7 +155,7 @@
   },
   {
     "id": 12,
-    "slug": "dev-practices",
+    "slug": "flow",
     "category": "Flow",
     "title": "Git Branching",
     "description": "What is your Git branching strategy?",
@@ -169,7 +169,7 @@
   },
   {
     "id": 13,
-    "slug": "dev-practices",
+    "slug": "flow",
     "category": "Flow",
     "title": "Focus time",
     "description": "How much time in a typical day do you get to be \"in the zone\"?",
@@ -183,7 +183,7 @@
   },
   {
     "id": 14,
-    "slug": "dev-practices",
+    "slug": "observability",
     "category": "Observability",
     "title": "Observability",
     "description": "Observability is the process of watching what your systems do at every layer so that you can build a comprehensive picture of how it does what it does",

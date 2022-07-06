@@ -1,5 +1,10 @@
 body {
-  background-color: #00539F;
+  background-color: #eeeeee;
+  font-family: "helvetica", sans-serif;
+  font-size: 16px;
+  transform: translate3d(0, 0, 0);
+  background: linear-gradient(135deg, #2980b9 0%, #9b59b6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e5799", endColorstr="#7db9e8",GradientType=1 );
 }
 
 .category-name h1 {
@@ -17,7 +22,6 @@ body {
 }
 
 .question-card {
-
   border: 1px solid;
   border-radius: 10px;
   position: relative;
@@ -26,7 +30,9 @@ body {
   transform-style: preserve-3d;
   transition: all 0.8s ease;
 }
-
+.question-card:hover {
+  transform: rotatey(15deg) translatex(0px) translatey(0px);
+}
 .flipCard {
   transform: rotateY(180deg);
 }
@@ -45,13 +51,13 @@ body {
 .card-front.observability {
   background: cadetblue;
 }
-.card-front.availability {
-  background: rgb(255 147 231);
+.card-front.dev-practices {
+  background: rgb(238, 170, 224);
 }
-.card-front.tech{
+.card-front.tech {
   background: rgb(11 170 82);
 }
-.card-front.dev-practices {
+.card-front.availability {
   background: #d2cacb;
 }
 .card-front.deployments {
@@ -67,10 +73,10 @@ body {
 /** show a star on important cards **/
 span.card-important {
   position: absolute;
-  top:2%;
-  right:3%;
+  top: 2%;
+  right: 3%;
   font-size: 1rem;
-  color:yellow;
+  color: yellow;
   text-shadow: 1px 2px grey;
 }
 
@@ -81,8 +87,9 @@ span.card-important {
   border-radius: 10px;
   text-align: center;
   backface-visibility: hidden;
-  background: #15EBE1;
+  background: rgb(172, 170, 170);
   color: rgb(19, 19, 19);
+  /* color: white; */
   transform: rotateY(180deg);
 }
 
@@ -131,15 +138,14 @@ span.card-important {
   background-color: #bf5757;
 }
 
-footer.card-footer  {
+footer.card-footer {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   width: 100%;
   opacity: 60%;
-  color:white;
+  color: white;
   background-color: rgb(124, 116, 116);
 }
-
 
 #debug {
   font-size: large;
