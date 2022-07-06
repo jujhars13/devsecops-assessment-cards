@@ -1,9 +1,6 @@
 const Mustache = require("mustache");
 import data from "./js/cardModel.js";
 
-const cardContainer = document.getElementById("card-container");
-//document.getElementById("debug").innerHTML = JSON.stringify(data, null, 2);
-
 const cardTemplate = Mustache.render(
   `
 {{#data}}
@@ -49,7 +46,7 @@ const cardTemplate = Mustache.render(
   { data }
 );
 
-cardContainer.innerHTML = cardTemplate;
+document.getElementById("cards-go-here").innerHTML = cardTemplate;
 
 // add flip animation to cards
 const cards = document.getElementsByClassName("card-number");
