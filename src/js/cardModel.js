@@ -8,26 +8,34 @@
 //   categoryName: <name>
 //   cards:[<card_data>,card_data>]
 // }]
-import raw from "./cards.json";
+import rawCardData from "./cardData.json";
+import moreCardInfo from "./moreCardInfo.json";
 
 // get all categories first then add data to them
 // we want the data objects by returned by category
 // get unique categories to begin with
 let categories = {};
-raw.forEach((el) => {
+rawCardData.forEach((el) => {
   categories[el.category] = {};
 });
-raw.forEach((el) => {
+rawCardData.forEach((el) => {
   if (el.category) {
     categories[el.category].categoryName = el.category;
     categories[el.category].cards = [];
   }
 });
-raw.forEach((el) => {
-  if (el.category) {
-    categories[el.category].categoryName = el.category;
-    categories[el.category].cards.push(el);
+rawCardData.forEach((card) => {
+  let moreInfoData = moreCardInfo.filter(el => {
+    return el.cardId === card.id;
+  });
+  card.moreCardInfo = moreInfoData;
+  if (card.category) {
+    categories[card.category].categoryName = card.category;
+    categories[card.category].cards.push(card);
   }
 });
 
-export default Object.values(categories);
+const cardOnlyData = Object.values(categories);
+//console.log(cardOnlyData);
+
+export default cardOnlyData;

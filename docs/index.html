@@ -1,1 +1,121 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>DevSecOps Capability Assessment Cards</title><meta name="description" content=""/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha256-djO3wMl9GeaC/u6K+ic4Uj/LKhRUSlUFcsruzS7v5ms=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/><link rel="stylesheet" href="css/custom.css"/><link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"></head><body><nav class="navbar navbar-expand-lg navbar-dark bg-dark"><div class="container px-lg-5"><a class="navbar-brand" href="#!">DevSecOps Capability Assessment Cards {beta}</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li></ul></div></div></nav><header class="py-3"><div class="container px-lg-5"><div class="p-1 p-lg-5 rounded-3"><div class="m-4 m-lg-2"><h1 class="display-5 fw-bold text-white text-center">DevSecOps Capability Assessment Cards {beta}</h1><p class="fs-4 text-white text-center">Use these cards to assess your teams in terms of DevSecOps and software delivery capabilities</p><p class="fs-5 text-gray">For each card pick a score between 1-4 and record it. Use the free tier of <a href="https://play.planningpoker.com/" style="text-decoration: none">play.planningpoker.com</a> to record your results until we can get some websockety thing going here.</p><table class="table table-dark table-striped"><thead><tr><td scope="col" colspan="2">Rank</td><td scope="col">Score</td><td scope="col">Description</td></tr></thead><tbody><tr><th scope="row">4 points</th><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td><td>Excellent</td><td>We're experts at this</td></tr><tr><th scope="row">3 points</th><td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td><td>Good</td><td>We're good at this and do it well</td></tr><tr><th scope="row">2 points</th><td><i class="fas fa-star"></i><i class="fas fa-star"></i></td><td>Ok/Started</td><td>We've only just started this or are struggling</td></tr><tr><th scope="row">1 point</th><td><i class="fas fa-star"></i></td><td>None</td><td>We don't really do this</td></tr></tbody></table></div></div></div></header><section class="pt-4"><div id="card-container" class="row justify-content-center"></div></section><footer class="py-5 bg-dark"><div class="container"><p class="m-0 text-center text-white">Copyleft; Thoughtworks 2021</p><div id="debug"></div></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Engineering Capability Assessment Cards</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha256-djO3wMl9GeaC/u6K+ic4Uj/LKhRUSlUFcsruzS7v5ms=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-lg-5">
+      <a class="navbar-brand" href="#!">Software Delivery Discussion Cards</a>
+    </div>
+  </nav>
+
+  <!-- Header-->
+  <header class="py-3">
+    <div class="container px-lg-5">
+      <div class="p-1 p-lg-5 rounded-3">
+        <div class="m-4 m-lg-2">
+          <h1 id="page-title" class="display-5 fw-bold text-white text-center">Software Delivery Discussion Cards</h1>
+          <p class="fs-5 text-white">For each card pick a score between 1-5 based on these criteria:</p>
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <td scope="col" colspan="2">Rank</td>
+                <td scope="col">Score</td>
+                <td scope="col">Description</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">5 points</th>
+                <td><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                    class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></td>
+                <td>Exceeding</td>
+                <td>We're trailblazing and setting the standards</td>
+              </tr>
+              <tr>
+                <th scope="row">4 points</th>
+                <td><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                    class="fas fa-star text-warning"></i></td>
+                <td>Succeeding</td>
+                <td>We're good at this, and have &gt; 80% consistently</td>
+              </tr>
+              <tr>
+                <th scope="row">3 points</th>
+                <td><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></i><i class="fas fa-star text-warning"></i></td>
+                <td>Doing Ok</td>
+                <td>We've started, but still room for improvement</td>
+              </tr>
+              <tr>
+                <th scope="row">2 points</th>
+                <td><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></td>
+                <td>Just starting</td>
+                <td>We've just started this or considering it</td>
+              </tr>
+              <tr>
+                <th scope="row">1 point </th>
+                <td><i class="fas fa-star text-warning"></i></td>
+                <td>Not started</td>
+                <td>We don't really do this, or haven't thought about it</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content-->
+  <section >
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+      </symbol>
+    </svg>
+
+    <div class="container justify-content-center">
+      <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+        <div>
+          <strong>Rules:</strong> Participants are free to use the information received, but neither the identity nor the affiliation of the
+      speaker(s), nor that of any other participant, may be revealed.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-4">
+    <div id="cards-go-here" class="row justify-content-center">
+      <!-- card components goes here -->
+    </div>
+  </section>
+
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyleft; Thoughtworks 2021</p>
+      <div id="debug">
+        <!-- debug component goes here -->
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha256-XDbijJp72GS2c+Ij234ZNJIyJ1Nv+9+HH1i28JuayMk=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script></body>
+
+</html>

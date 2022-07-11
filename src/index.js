@@ -1,59 +1,44 @@
-const Mustache = require("mustache");
-import data from "./js/cardModel.js";
+import cardData from "./js/cardModel.js";
+import { renderUserView } from "./js/cardRenderer.js";
 
-const cardContainer = document.getElementById("card-container");
-//document.getElementById("debug").innerHTML = JSON.stringify(data, null, 2);
-
-const cardTemplate = Mustache.render(
-  `
-{{#data}}
-<div class="category-name" data-category="{{slug}}">
-  <h1>{{{categoryName}}}</h1>
-</div>
-{{#cards}}
-<div class="main-card-container col-md-6 col-lg-3 mb-2">
-  <div class="question-card">
-    <div class="card-front {{slug}}">
-      <div class="card-number">{{id}}</div>
-      {{#important}}
-      <span class="card-important"><i class="fas fa-star"></i></span>
-      {{/important}}
-      <h2>{{title}}</h2>
-      <p>{{description}}</p>
-      <footer class="card-footer">{{categoryName}}</footer>
-    </div>
-    <div class="card-back">
-      <div class="card-number">{{id}}</div>
-      {{#important}}
-      <span class="card-important"><i class="fas fa-star"></i></span>
-      {{/important}}
-      <h2>{{title}}</h2>
-      <div class="card-score">
-        <p class="card-points high-score">4 points</p>
-        <p>{{high_score}}</p>
-      </div>
-      <div class="card-score">
-        <p class="card-points low-score">1 point</p>
-        <p>{{low_score}}</p>
-      </div>
-      {{#more_info_link}}
-      <p><a href="{{more_info_link}}" class="card-link">More Info</a></p>
-      {{/more_info_link}}
-    </div>
-  </div>
-</div>
-{{/cards}}
-{{/data}}
-`,
-  { data }
-);
-
-cardContainer.innerHTML = cardTemplate;
+document.getElementById("cards-go-here").innerHTML = renderUserView(cardData);
 
 // add flip animation to cards
-const cards = document.getElementsByClassName("question-card");
+const cards = document.getElementsByClassName("card-number");
 Object.values(cards).forEach((el) => {
   el.addEventListener("click", () => {
-    el.classList.toggle("flipCard");
+    el.parentElement.parentElement.classList.toggle("flipCard");
   });
 });
+
+/**
+ * easter-egg tribute to the early web
+ * We don't know what we're doing with the css and design so
+ * we're sticking in silly things to distract from that fact
+ */
+setTimeout(() => {
+  const titleEl = document.getElementById("page-title");
+  const marquee = document.createElement("marquee");
+  titleEl.parentNode.insertBefore(marquee, titleEl);
+  marquee.appendChild(titleEl);
+}, 5000);
+
+
+
+/**
+ * This is for the accordion
+ */
+  let acc = document.getElementsByClassName("accordion");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
