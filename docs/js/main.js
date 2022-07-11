@@ -66,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((module) => {
 
-eval("module.exports = JSON.parse('[{\"cardId\":1,\"title\":\"lorum ipsum\",\"description\":\"lorum ipsum sed dolerete Scintilla in culina peperat\",\"url\":\"https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture\"},{\"cardId\":1,\"title\":\"second lorum ipsum\",\"description\":\"lorum ipsum sed dolerete Scintilla in culina peperat\",\"url\":\"https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture\"},{\"cardId\":1,\"title\":\"third lorum ipsum\",\"description\":\"lorum ipsum sed dolerete Scintilla in culina peperat\",\"url\":\"https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture\"}]');\n\n//# sourceURL=webpack://devsecops-assessment/./src/js/moreCardInfo.json?");
+eval("module.exports = JSON.parse('[{\"cardId\":1,\"title\":\"lorum ipsum\",\"description\":\"lorum ipsum sed dolerete Scintilla in culina peperat\",\"url\":\"https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture\"},{\"cardId\":1,\"title\":\"second lorum ipsum\",\"description\":\"lorum ipsum sed dolerete Scintilla in culina peperat\",\"url\":\"https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture\"},{\"cardId\":2,\"title\":\"third lorum ipsum\",\"description\":\"lorum ipsum sed dolerete Scintilla in culina peperat\",\"url\":\"https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture\"}]');\n\n//# sourceURL=webpack://devsecops-assessment/./src/js/moreCardInfo.json?");
 
 /***/ })
 
