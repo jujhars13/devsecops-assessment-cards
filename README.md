@@ -48,14 +48,17 @@ csvjson cardData.csv | jq -c '.[]' > /tmp/data.jsonl
 jq -s '.' /tmp/data.jsonl > src/js/cardData.json
 
 # as one line
+# To generate questions set from CSV to json
 $(csvjson cardData.csv | jq -c '.[]' | jq -s '.' > src/js/cardData.json)
+# To generate moreCardInfo from CSV to json
+$(csvjson moreCardInfo.csv | jq -c '.[]' | jq -s '.' > src/js/moreCardInfo.json)
 ```
 
 ## TODO
 
-- [ ] fix more-info accordian style
-- [ ] create CSV file for more-info data
-- [ ] update readme with instructions for generating more-info json
+- [x] fix more-info accordian style
+- [x] create CSV file for more-info data
+- [x] update readme with instructions for generating more-info json
 - [ ] populate csv with more-info data
 
 ## Licence
