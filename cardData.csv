@@ -1,5 +1,5 @@
 id,slug,category,title,description,high_score,low_score,more_info_link,what_this_tells_us,how_to_help,important,seq
-1,dev-practices,Dev Practices,Documentation,How good are your docs? How trusted are they? How easy are they to find?,"Our docs are updated regularly, accurate and easy to find","Documentation is poor, out of date or non-existant",https://www.atlassian.com/work-management/knowledge-sharing/documentation/importance-of-documentation,"- Self-sufficiency / reducing dependence on teams
+1,dev-practices,Dev Practices,Documentation,How good are your docs? How trusted are they? How easy are they to find?,"Our docs are updated regularly, trustworthy, accurate and easy to find","Documentation is poor, out of date or non-existant",https://www.atlassian.com/work-management/knowledge-sharing/documentation/importance-of-documentation,"- Self-sufficiency / reducing dependence on teams
 - Encourages knowledge sharing
 - Faster onboarding
 - Single source of truth for technical decisions, standards","- Planned documentation time as a team activity to update docs
