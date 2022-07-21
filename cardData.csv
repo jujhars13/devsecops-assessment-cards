@@ -12,7 +12,7 @@ id,slug,category,title,description,high_score,low_score,more_info_link,what_this
 - Templates
 - Training
 - IaC enabling teams",,1
-3,dev-practices,Dev Practices,Testability,How easy is it to provide confidence that the changes that are made are correct (technically and productly),We have multiple assurance steps of differing types run in multiple environments as part of our CI & CD processes,"We only have basic unit or ""integration tests"" in place",,"- Shift left, shorter feedback loops
+3,dev-practices,Dev Practices,QA,How easy is it to provide confidence that the changes that are made are correct (technically and functionally),We have multiple assurance steps of differing types run in multiple environments as part of our CI & CD processes,"We only have basic unit or ""integration tests"" in place",,"- Shift left, shorter feedback loops
 - insight into deployment frequency
 - code is structured well enough to test
 - Documents code (discovery)
@@ -20,7 +20,7 @@ id,slug,category,title,description,high_score,low_score,more_info_link,what_this
 - CI/CD Enabling team
 - Test Automation enabling teams
 - Adding in technical debt tasks",1,1
-4,dev-practices,Dev Practices,Linting and Code Quality,How good are you code quality and PR standards.,"We have documented, automated and enforced code quality and linting standards.
+4,dev-practices,Dev Practices,Linting and Code Quality,How good are your code quality and PR standards.,"We have documented, automated and enforced code quality and linting standards.
 We have a PR template that should be followed otherwise your PRs are rejected.
 We have a structured git-branch standard that relates back to the ticket.
 Our have good discipline around our commit messages.","We don't have linting standards
@@ -32,8 +32,8 @@ Our PR descriptions are poor or non-existent",,"- Team cares about quality
 - Exemplar repos
 - CI/CD Enabling team
 - Template repos",1,
-5,dev-practices,Dev Practices,Security,Security by design and automated security testing,"We run regulalr agile threat modelling sessions
-We include Evil User stories. 
+5,dev-practices,Dev Practices,Security,Security by design and automated security testing,"We run regular threat modelling sessions
+We include Evil User stories.
 We have several automated steps as part of our CI/CD (SAST, supply chain, DAST)",We have no idea what you're talking about,"[""https://thoughtworksinc.github.io/sensible-security-conversations/""]","- The right investment is made upfront
 - Vulns don't make it to production
 - Shift left, pick up risks early
@@ -46,9 +46,9 @@ We have several automated steps as part of our CI/CD (SAST, supply chain, DAST)"
 - Tabletop threat modelling workshops
 - SecureCodeWarrior training
 ",,1
-6,dev-practices,Dev Practices,"Deployment 
-strategy",Do you have the ability to do A/B testing in production,"We use fine-grained blue-green deployment 
-techniques or other deployment strategy 
+6,dev-practices,Dev Practices,"Deployment
+strategy",Do you have the ability to do A/B testing in production,"We use fine-grained blue-green deployment
+techniques or other deployment strategy
 at the level of individual services
 Automated rollbacks
 Incident response playbook","We do not use any deployment techniques
@@ -73,19 +73,19 @@ We often ignore the golden-path",,"- ""Not Invented Here"" syndrome
 - Publish sensible defaults for security
 - Promote golden-path for infra
 - Promote golden-path for back-end",,1
-8,culture,Culture,Uh oh,What happens in case of failure/incident?,"We through the situation together.
+8,culture,Culture,Uh oh,What happens in case of failure/incident?,"We work through the situation together.
 We discuss the issue in depth
 We work out the best way to prevent/mitigate in future","We discuss the issue but nothing changes
 The person/team could get in trouble or is blamed
-No investment is made in paying down tech debt","[ ""https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture"", ""https://blog.pragmaticengineer.com/postmortem-best-practices/"" ]","- Is there a Pathalogical/Bureaucratic/Generative culture
+No investment is made in paying down tech debt","[ ""https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture"", ""https://blog.pragmaticengineer.com/postmortem-best-practices/"" ]","- Is there a Pathological/Bureaucratic/Generative culture
 - Tech debt stories not being prioritized
 - Absence of runbooks
 - Siloed teams","- Incident handling best practices
-- Blameless postmortem facilitation 
+- Blameless postmortem facilitation
 - Obserability strategy
 - JIRA audit
 - Agile coaching
-- Clear ownership and accountability of resolution 
+- Clear ownership and accountability of resolution
 - Runbooks for common issues",1,1
 9,culture,Culture,Onboarding,How easy is it to onboard members to your team and make them productive,New team members can spin up a environment quickly and commit to production < 3 weeks,"It can take a few months before a team member can actively contribute
 
@@ -95,12 +95,12 @@ It takes a long time to discover all the codebases and environments","[""https:/
 - Runbook enablement
 - Documentation enabling team
 - Documentation hackathon",1,1
-10,culture,Culture,Purpose,Do you know why your team is doing what it's doing and how it contributes to the big picture? ,"Very clear what we're doing  
+10,culture,Culture,Purpose,Do you know why your team is doing what it's doing and how it contributes to the big picture? ,"Very clear what we're doing
 We're close to the customer
 We see our impact quickly
 We respond quickly to customer feedback
 We can see the impact of our changes on our customers
-There is a clear strategy and vision for our product","We don't know how / where our code is being used 
+There is a clear strategy and vision for our product","We don't know how / where our code is being used
 No idea who our customer is or what they want. We only take educated guesses
 We only rarely (if ever) see the impact of our changes
 We are told what to do. Not sure why",,"- Individual purpose
@@ -112,9 +112,9 @@ We are told what to do. Not sure why",,"- Individual purpose
 - Product analytics",1,1
 11,culture,Culture,Growth,"Have you grown in your profession since you joined Tesco?
 How easy is it to find clear and visible ways to help you progress in your discipline","I have given enough opportunity to explore different things
-I felt I have grown a lot since I joined tesco. 
-There is enough supports/forums to help me progress.
-I have been mentored many times by others. 
+I felt I have grown a lot since I joined tesco.
+There are enough support forums to help me progress.
+I have been mentored many times by others.
 There is a culture of giving feedback.","I don't get to do interesting tasks
 I don't see clear paths of progression
 I feel I am stuck",,"- How good are our feedback loops.
@@ -124,7 +124,7 @@ I feel I am stuck",,"- How good are our feedback loops.
 - Create mentoring framework
 - Establish and fund Communities of Practice
 - Establish and fund more hackathons",,1
-12,flow,Flow,Git Branching,What is your Git branching strategy?,"We develop directly on main (trunk based) or any 
+12,flow,Flow,Git Branching,What is your Git branching strategy?,"We develop directly on main (trunk based) or any
 feature branches last no more than 2 days",Our feature branches can last for many sprints,,"- how to break down work properly
 - the value of regular and small commits
 - how blocked/unblocked they are on most tasks
