@@ -5,7 +5,7 @@
     "category": "Dev Practices",
     "title": "Documentation",
     "description": "How good are your docs? How trusted are they? How easy are they to find?",
-    "high_score": "Our docs are updated regularly, accurate and easy to find",
+    "high_score": "Our docs are updated regularly, trustworthy, accurate and easy to find",
     "low_score": "Documentation is poor, out of date or non-existant",
     "more_info_link": "https://www.atlassian.com/work-management/knowledge-sharing/documentation/importance-of-documentation",
     "what_this_tells_us": "- Self-sufficiency / reducing dependence on teams\n- Encourages knowledge sharing\n- Faster onboarding\n- Single source of truth for technical decisions, standards",
