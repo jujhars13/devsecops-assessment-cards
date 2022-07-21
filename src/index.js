@@ -21,7 +21,7 @@ setTimeout(() => {
   const marquee = document.createElement("marquee");
   titleEl.parentNode.insertBefore(marquee, titleEl);
   marquee.appendChild(titleEl);
-}, 5000);
+}, 7000);
 
 
 
