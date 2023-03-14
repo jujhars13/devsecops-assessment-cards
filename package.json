@@ -24,7 +24,7 @@
     "html-webpack-plugin": "^4.5.1",
     "prettier": "^2.2.1",
     "reload": "^3.1.1",
-    "webpack": "^5.16.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.4.0"
   }
 }
