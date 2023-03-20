@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Config deployment",
+    "description": "How easy is to deploy/inject a configuration change",
+    "high_score": "We can run the majority of config changes independently of our code release.  All changes are auditable and revertable",
+    "low_score": "We have to manual changes",
+    "more_info_link": null,
+    "important": null,
+    "seq": 1
+  },
+  {
+    "id": 2,
+    "slug": "dev-practices",
+    "category": "Dev Practices",
+    "title": "Feature Coverage",
+    "description": "What proportion of the features are covered by a test",
+    "high_score": "Every one of our features has at least one test",
+    "low_score": "Less than 25% of our features have corresponding tests",
+    "more_info_link": null,
+    "important": true,
+    "seq": 1
+  },
+  {
+    "id": 3,
+    "slug": "observability",
+    "category": "Observability",
+    "title": "Unplanned Work",
+    "description": "How much unplanned work do you have and how do you handle it",
+    "high_score": "We have very little unplanned work and have spare capacity to handle any that comes in",
+    "low_score": "More than half our work in any given sprint is unplanned",
+    "more_info_link": null,
+    "important": true,
+    "seq": 1
+  }
+]

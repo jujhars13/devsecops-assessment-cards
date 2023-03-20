@@ -61,7 +61,7 @@ Manual config","[""https://martinfowler.com/bliki/BlueGreenDeployment.html""]","
 - Observability enablement
 ",1,1
 7,dev-practices,Dev Practices,Sensible Defaults,Do you follow sensible defaults/golden path/tech radar,"We have/know about sensible defaults and we follow them as best we can
-We use technology off Tesco's golden-path/menu","We don't know about sensible defaults
+We use technology off <org>'s golden-path/menu","We don't know about sensible defaults
 We often ignore the golden-path",,"- ""Not Invented Here"" syndrome
 - overall practices maturity
 - Poor awareness of best practice
@@ -110,9 +110,9 @@ We are told what to do. Not sure why",,"- Individual purpose
 - Product Strategies
 - Tech strategies
 - Product analytics",1,1
-11,culture,Culture,Growth,"Have you grown in your profession since you joined Tesco?
+11,culture,Culture,Growth,"Have you grown in your profession since you joined <org>?
 How easy is it to find clear and visible ways to help you progress in your discipline","I have given enough opportunity to explore different things
-I felt I have grown a lot since I joined tesco.
+I felt I have grown a lot since I joined <org>.
 There are enough support forums to help me progress.
 I have been mentored many times by others.
 There is a culture of giving feedback.","I don't get to do interesting tasks
