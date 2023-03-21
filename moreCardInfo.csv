@@ -1,10 +1,1 @@
 ﻿cardId,title,description,url
-1,The importance of documentation ,Why docs are important,https://www.atlassian.com/work-management/knowledge-sharing/documentation/importance-of-documentation
-2,Infrastructure as Code,IaC,https://martinfowler.com/bliki/InfrastructureAsCode.html
-5,Agile Threat Modelling,Agile Threat Modelling Resource,https://thoughtworksinc.github.io/sensible-security-conversations/
-6,Blue-Green Deployment,Deploymet strategy with blue-green deployment,https://martinfowler.com/bliki/BlueGreenDeployment.html
-8,DevOps Culture,Westrum Organisational Culture,https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture
-8,DevOps Best Practices,Incident Review and Postmortem Best Practices,https://blog.pragmaticengineer.com/postmortem-best-practices
-9,Team Topologies,Team Topology,https://github.com/TeamTopologies/Team-API-template
-14,How Much Observability is Enough?,How Much Observerability is Enough?,https://thenewstack.io/how-much-observability-is-enough/
-14,What Does Good Look Like?,What Does Good Look Like?,http://devsikhops.com/observability-coverage/

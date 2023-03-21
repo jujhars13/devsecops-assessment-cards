@@ -2,15 +2,15 @@ import Mustache from "mustache";
 
 /**
  * Render the client side template
- * @param {cardData} cardData object
+ * @param {data} data object
  * @returns string <the rendered HTML template>
  */
-function renderUserView(cardData) {
+function renderUserView(data) {
   return Mustache.render(
     `
   {{#data}}
     <div class="category-name" data-category="{{slug}}">
-      <h2 class="display-4">{{{categoryName}}}</h2>
+      <h2 class="display-5">{{{categoryName}}}</h2>
     </div>
     {{#cards}}
     <div class="main-card-container col-md-6 col-lg-3 mb-2">
@@ -71,7 +71,7 @@ function renderUserView(cardData) {
     {{/cards}}
   {{/data}}
   `,
-    { data: cardData }
+    { data }
   );
 }
 
