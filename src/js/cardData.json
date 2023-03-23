@@ -12,7 +12,7 @@
     "high_score": "We can run the majority of config changes independently of our code release.  All changes are auditable and revertable",
     "low_score": "We have to manual changes",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -28,7 +28,7 @@
     "high_score": "Every one of our features has at least one test",
     "low_score": "Less than 25% of our features have corresponding tests",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -44,7 +44,7 @@
     "high_score": "We have very little unplanned work and have spare capacity to handle any that comes in",
     "low_score": "More than half our work in any given sprint is unplanned",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -92,7 +92,7 @@
     "high_score": "We spend our 30% of our time and budget on addressing operational aspects?",
     "low_score": "We try to spend as little as possible on operational aspects / we do not track spend on operational aspects?",
     "more_info_link": null,
-    "important": null,
+    "important": true,
     "seq": 1
   },
   {
@@ -236,7 +236,7 @@
     "high_score": "We do our best to follow this manifesto",
     "low_score": "Never heard of it before",
     "more_info_link": "https://ruggedsoftware.org",
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -284,7 +284,7 @@
     "high_score": "We use versioned and tested IaC for all our deployments.  It is kept alongside the code or in a dedicated and well documented repo",
     "low_score": "Our deployments are full on manual ClickOps",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": null
   },
   {
@@ -412,7 +412,7 @@
     "high_score": "We can tell you the CPU, RAM, NetworkIO & DiskIO for all our hardware in granular detail.  We can enumerate our hardware in detail and know which OS/CPU etc we’re running on",
     "low_score": "We only have very rough measures of our hardware performance",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -860,7 +860,7 @@
     "high_score": "We have a clear mission that we are with all stakeholders",
     "low_score": "It is rarely clear what our mission is",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -1084,7 +1084,7 @@
     "high_score": "Our code base is clean, safe to use and well-tested",
     "low_score": "Our code base is piled with workarounds and danger areas",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -1100,7 +1100,7 @@
     "high_score": "The platform is a force multiplier and helps us deliver rapidly and safely. We love the platform.",
     "low_score": "The platform seems to obstruct us and is difficult to use",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -1212,7 +1212,7 @@
     "high_score": "We use auto-renewal of certificates combined with certificate monitoring so we can take remedial action ahead of time",
     "low_score": "We do not know when our certificates are going to expire",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   },
   {
@@ -1356,7 +1356,7 @@
     "high_score": "Every 2 days or less",
     "low_score": "Every 2 weeks or longer in practice",
     "more_info_link": null,
-    "important": true,
+    "important": null,
     "seq": 1
   }
 ]
