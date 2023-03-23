@@ -21,8 +21,8 @@ function renderUserView(data) {
           {{#important}}
           <span class="card-important"><i class="fas fa-star"></i></span>
           {{/important}}
-          <h2>{{title}}</h2>
-          <p>{{description}}</p>
+          <h2 data-type="title">{{title}}</h2>
+          <p class="p-2" data-type="description">{{description}}</p>
           <footer class="card-footer">{{categoryName}}</footer>
         </div>
         <div class="card-back scroll">
@@ -35,7 +35,7 @@ function renderUserView(data) {
             <p class="card-points high-score">5 points</p>
             <p>{{high_score}}</p>
           </div>
-          <div class="card-score">
+          <div class="card-score ">
             <p class="card-points low-score">1 point</p>
             <p>{{low_score}}</p>
           </div>
