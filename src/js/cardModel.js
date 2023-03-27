@@ -8,8 +8,8 @@
 //   categoryName: <name>
 //   cards:[<card_data>,card_data>]
 // }]
-import rawCardData from "./cardData.json";
-import moreCardInfo from "./moreCardInfo.json";
+import rawCardData from "../data/cardData.json";
+import moreCardInfo from "../data/moreCardInfo.json";
 
 // get all categories first then add data to them
 // we want the data objects by returned by category
@@ -25,7 +25,7 @@ rawCardData.forEach((el) => {
   }
 });
 rawCardData.forEach((card) => {
-  let moreInfoData = moreCardInfo.filter(el => {
+  let moreInfoData = moreCardInfo.filter((el) => {
     return el.cardId === card.id;
   });
   card.moreCardInfo = moreInfoData;

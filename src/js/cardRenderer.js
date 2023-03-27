@@ -2,10 +2,16 @@ import Mustache from "mustache";
 
 /**
  * Render the client side template
- * @param {data} data object
+ * @param {data} rawData object
  * @returns string <the rendered HTML template>
  */
-function renderUserView(data) {
+function renderUserView(rawData) {
+  const data = rawData.map((category) => {
+    category.slug = category.categoryName.toLowerCase().replace(" ", "-");
+    console.log(category);
+    return category;
+  });
+
   return Mustache.render(
     `
   {{#data}}
@@ -71,7 +77,7 @@ function renderUserView(data) {
     {{/cards}}
   {{/data}}
   `,
-    { data }
+    { data: rawData }
   );
 }
 
