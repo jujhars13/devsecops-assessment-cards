@@ -7,8 +7,10 @@ import Mustache from "mustache";
  */
 function renderUserView(rawData) {
   const data = rawData.map((category) => {
-    category.slug = category.categoryName.toLowerCase().replace(" ", "-");
-    console.log(category);
+    category.slug = "";
+    if (category.categoryName) {
+      category.slug = category.categoryName.toLowerCase().replace(" ", "-");
+    }
     return category;
   });
 

@@ -45,14 +45,14 @@ You can then produce the other formats we need (`jsonl` -> `json`) using Python 
 # use Python csvjson from csvkit to convert our csv file to a jsonl then to a json file
 # pip3 install csvkit
 csvjson questions/dev-assessment-cannonical.csv | jq -c '.[]' > /tmp/data.jsonl
-jq -s '.' /tmp/data.jsonl > src/js/cardData.json
+jq -s '.' /tmp/data.jsonl > src/data/cardData.json
 
 # as one line
 # To generate questions set from CSV to json
-$(csvjson questions/dev-assessment-cannonical.csv | jq -c '.[]' | jq -s '.' > src/js/cardData.json)
+$(csvjson questions/dev-assessment-cannonical.csv | jq -c '.[]' | jq -s '.' > src/data/cardData.json)
 
 # To generate moreCardInfo from CSV to json
-$(csvjson moreCardInfo.csv | jq -c '.[]' | jq -s '.' > src/js/moreCardInfo.json)
+$(csvjson moreCardInfo.csv | jq -c '.[]' | jq -s '.' > src/data/moreCardInfo.json)
 ```
 
 ## TODO
