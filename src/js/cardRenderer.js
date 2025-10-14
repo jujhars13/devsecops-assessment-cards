@@ -25,7 +25,7 @@ function renderUserView(rawData) {
       <div class="question-card">
 
         <div class="card-front {{slug}}">
-          <div class="card-number">{{id}}</div>
+          <div class="card-number">{{uniq}}</div>
           {{#important}}
           <span class="card-important"><i class="fas fa-star"></i></span>
           {{/important}}
@@ -34,7 +34,7 @@ function renderUserView(rawData) {
           <footer class="card-footer">{{categoryName}}</footer>
         </div>
         <div class="card-back scroll">
-          <div class="card-number">{{id}}</div>
+          <div class="card-number">{{uniq}}</div>
           {{#important}}
           <span class="card-important"><i class="fas fa-star"></i></span>
           {{/important}}
