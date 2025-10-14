@@ -8,7 +8,7 @@
 //   categoryName: <name>
 //   cards:[<card_data>,card_data>]
 // }]
-import rawCardData from "../data/cardData.json";
+import rawCardData from "../data/cardData.json?new=1";
 import moreCardInfo from "../data/moreCardInfo.json";
 
 // get all categories first then add data to them
