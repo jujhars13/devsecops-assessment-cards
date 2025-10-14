@@ -29,7 +29,7 @@ function renderUserView(rawData) {
           {{#important}}
           <span class="card-important"><i class="fas fa-star"></i></span>
           {{/important}}
-          <h2 data-type="title">{{title}}</h2>
+          <h2 data-type="title">{{id}}{{title}}</h2>
           <p class="p-2" data-type="description">{{description}}</p>
           <footer class="card-footer">{{categoryName}}</footer>
         </div>
