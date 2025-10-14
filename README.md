@@ -57,7 +57,7 @@ $(csvjson moreCardInfo.csv | jq -c '.[]' | jq -s '.' > src/data/moreCardInfo.jso
 
 ## TODO
 
-- [x] fix more-info accordian style
+- [x] fix more-info accordion style
 - [x] create CSV file for more-info data
 - [x] update readme with instructions for generating more-info json
 - [x] populate csv with more-info data
